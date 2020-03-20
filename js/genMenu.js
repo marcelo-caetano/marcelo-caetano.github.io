@@ -1,4 +1,4 @@
-function genNav() {
+function genMenu() {
   var menu = [
     {
       id: "index",
