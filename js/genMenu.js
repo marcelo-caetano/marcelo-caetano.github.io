@@ -5,50 +5,50 @@ function genMenu() {
       class: "nav",
       href: "./index.html",
       target: "_self",
-      text: "Home"
+      text: "Home",
     },
     {
       id: "bio",
       class: "nav",
       href: "./bio.html",
       target: "_self",
-      text: "Bio"
+      text: "Bio",
     },
     {
       id: "pub",
       class: "nav",
       href: "./publications.html",
       target: "_self",
-      text: "Publications"
+      text: "Publications",
     },
     {
       id: "projects",
       class: "nav",
       href: "./projects.html",
       target: "_self",
-      text: "Projects"
+      text: "Projects",
     },
     {
       id: "software",
       class: "nav",
       href: "./software.html",
       target: "_self",
-      text: "Software"
+      text: "Software",
     },
     {
       id: "data",
       class: "nav",
       href: "./data.html",
       target: "_self",
-      text: "Data"
+      text: "Data",
     },
     {
       id: "teaching",
       class: "nav",
       href: "./teaching.html",
       target: "_self",
-      text: "Teaching"
-    }
+      text: "Teaching",
+    },
   ];
 
   var nav = '<ul> <li class="listHeader">Menu</li>';

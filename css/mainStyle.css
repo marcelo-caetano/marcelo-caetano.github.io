@@ -1,7 +1,7 @@
 /* position: top, bottom, left, and right */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -9,199 +9,208 @@
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
 button {
-    border-radius: 6px;
-    border: none;
-    margin-left: 2vmin;
-    margin-right: 2vmin;
-    text-align: center;
-    text-decoration: none;
-    font-size: 2vmin;
-    min-height: 4vmin;
-    min-width: 10vmin;
-    height: 6vmin;
-    width: 12vmin;
-    transition-duration: 0.25s;
+  border-radius: 6px;
+  border: none;
+  margin-left: 2vmin;
+  margin-right: 2vmin;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2vmin;
+  min-height: 4vmin;
+  min-width: 10vmin;
+  height: 6vmin;
+  width: 12vmin;
+  transition-duration: 0.25s;
 }
 
 button:hover {
-    /*color: #52aad8;*/
-    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  /*color: #52aad8;*/
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* NAVIGATION LINKS */
 
 /* unvisited link */
 a.nav:link {
-    color: #ffffff;
-    background-color: transparent;
-    text-decoration: none;
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 /* visited link */
 a.nav:visited {
-    color: #52aad8;
-    background-color: transparent;
-    text-decoration: none;
+  color: #52aad8;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 /* mouse over link */
 a.nav:hover {
-    color: #52aad8;
-    background-color: transparent;
-    text-decoration: underline;
-    /*text-shadow: 2px 2px #52aad8;*/
+  color: #52aad8;
+  background-color: transparent;
+  text-decoration: underline;
+  /*text-shadow: 2px 2px #52aad8;*/
 }
 
 /* selected link */
 a.nav:active {
-    color: #273a4b;
-    background-color: transparent;
-    text-decoration: underline;
-    /*text-shadow: 2px 2px #ffffff;*/
+  color: #273a4b;
+  background-color: transparent;
+  text-decoration: underline;
+  /*text-shadow: 2px 2px #ffffff;*/
 }
 
 /* TEXT LINKS */
 
 /* unvisited link */
 a.text:link {
-    color: #212121;
-    background-color: transparent;
-    /*text-decoration: none;*/
+  color: #212121;
+  background-color: transparent;
+  /*text-decoration: none;*/
 }
 
 /* visited link */
 a.text:visited {
-    color: #273a4b;
-    background-color: transparent;
-    /*text-decoration: none;*/
+  color: #273a4b;
+  background-color: transparent;
+  /*text-decoration: none;*/
 }
 
 /* mouse over link */
 a.text:hover {
-    color: #273a4b;
-    background-color: transparent;
-    /*text-decoration: none;*/
-    /*text-shadow: 2px 2px #52aad8;*/
+  color: #273a4b;
+  background-color: transparent;
+  /*text-decoration: none;*/
+  /*text-shadow: 2px 2px #52aad8;*/
 }
 
 /* selected link */
 a.text:active {
-    color: #1d2d3b;
-    background-color: transparent;
-    /*text-decoration: none;*/
+  color: #1d2d3b;
+  background-color: transparent;
+  /*text-decoration: none;*/
 }
 
 img {
-    float: left;
-    width: 40.0vmin;
-    height: 22.0vmin;
-    /* To center an image, set left and right margin to auto and make it into a block element */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2vmin;
-    border: 0;
+  float: left;
+  width: 40vmin;
+  height: 22vmin;
+  /* To center an image, set left and right margin to auto and make it into a block element */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2vmin;
+  border: 0;
 }
 
 p {
-    font-size: 2.2vmin;
-    /*font-family: Arial, Helvetica, sans-serif;*/
-    font-family: Verdana, Geneva, sans-serif;
-    text-align: left;
+  font-size: 2.2vmin;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: left;
 }
 
 h2 {
-    text-align: center;
-    font-size: 3vmin;
+  text-align: center;
+  font-size: 3vmin;
 }
 
 h3 {
-    text-align: center;
-    font-size: 2.5vmin;
-    /*margin-top: 0;
+  text-align: center;
+  font-size: 2.5vmin;
+  /*margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;*/
-    color: #273a4b;
+  color: #273a4b;
 }
 
 hr {
-    border-top: 3px solid #273a4b;
-    margin-left: 0;
-    margin-right: 0;
+  border-top: 3px solid #273a4b;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 nav {
-    /*flex: 1;*/
-    background-color: #2a2a2b;
-    color: #ffffff;
+  /*flex: 1;*/
+  background-color: #2a2a2b;
+  color: #ffffff;
 }
 
 li {
-    list-style-type: none;
-    padding-bottom: 2.5vmin;
-    padding-right: 2.5vmin;
-    font-size: 2.5vmin;
-    text-align: left;
+  list-style-type: none;
+  padding-bottom: 2.5vmin;
+  padding-right: 2.5vmin;
+  font-size: 2.5vmin;
+  text-align: left;
 }
 
 li.listHeader {
-    padding-bottom: 4vmin;
-    /*padding-right: 1vw;*/
-    font-size: 5vmin;
-    text-align: left;
+  padding-bottom: 4vmin;
+  /*padding-right: 1vw;*/
+  font-size: 5vmin;
+  text-align: left;
 }
 
 ul {
-    list-style-type: none;
-    position: -webkit-sticky; /*Safari*/
-    position: sticky;
-    top: 0;
+  list-style-type: none;
+  position: -webkit-sticky; /*Safari*/
+  position: sticky;
+  top: 0;
 }
 
 body {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    background-color: #ffffff;
-    color: #273a4b;
-    font-size: 100%;
-    min-height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  background-color: #ffffff;
+  color: #273a4b;
+  font-size: 100%;
+  min-height: 100%;
 }
 
 header {
-    text-align: center;
-    background-color: #273a4b;
-    color: #ffffff;
-    font-size: 7vmin;
-    padding-top: 7vmin;
-    padding-bottom: 7vmin;
-    flex: 2;
+  text-align: center;
+  background-color: #273a4b;
+  color: #ffffff;
+  font-size: 7vmin;
+  padding-top: 7vmin;
+  padding-bottom: 7vmin;
+  flex: 2;
 }
 
 main {
-    /*display: flex;
+  /*display: flex;
     flex-direction: column;
     flex-basis: 70%;*/
-    max-width: 70%;
-    margin: auto;
-    /*flex-grow: 10;*/
+  max-width: 70%;
+  margin: auto;
+  /*flex-grow: 10;*/
 }
 
 footer {
-    text-align: center;
-    background-color: #273a4b;
-    color: #ffffff;
-    font-size: 1.1vmin;
-    padding-top: 2.5vmin;
-    padding-bottom: 2.5vmin;
-    flex: 1;
+  text-align: center;
+  background-color: #273a4b;
+  color: #ffffff;
+  font-size: 1.1vmin;
+  padding-top: 2.5vmin;
+  padding-bottom: 2.5vmin;
+  flex: 1;
 }
 
-header, body, footer, h1, h2, h3, h4, h5, h6 {
-    /*font-family: Arial, Helvetica, sans-serif;*/
-    font-family: Verdana, Geneva, sans-serif;
+header,
+body,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -209,113 +218,113 @@ header, body, footer, h1, h2, h3, h4, h5, h6 {
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
 .content {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 70%;
-    flex: 10;
-    background-color: #ffffff;
-    color: #000000;
-    font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  flex: 10;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.5rem;
 }
 
 .post {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
-    /*flex-wrap: wrap;*/
-    align-items: center;
-    justify-content: center;
-    /*max-width: 100%;*/
-    margin: 10px;
-    padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  /*flex-wrap: wrap;*/
+  align-items: center;
+  justify-content: center;
+  /*max-width: 100%;*/
+  margin: 10px;
+  padding: 10px;
 }
 
 .textContainer {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 60%;
-    /*max-width: 100%;*/
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+  /*max-width: 100%;*/
 }
 
 .titlePost {
-    text-align: left;
-    font-size: 2.8vmin;
-    color: #273a4b;
-    float: right;
-    margin-left: 3vmin;
-    /* To center an image, set left and right margin to auto and make it into a block element */
-    /*display: block;
+  text-align: left;
+  font-size: 2.8vmin;
+  color: #273a4b;
+  float: right;
+  margin-left: 3vmin;
+  /* To center an image, set left and right margin to auto and make it into a block element */
+  /*display: block;
     margin-left: auto;
     margin-right: auto;*/
-    padding: 2vmin;
+  padding: 2vmin;
 }
 
 .textPost {
-    text-align: left;
-    font-size: 2.2vmin;
-    float: right;
-    margin-left: 3vmin;
-    /* To center an image, set left and right margin to auto and make it into a block element */
-    /*display: block;
+  text-align: left;
+  font-size: 2.2vmin;
+  float: right;
+  margin-left: 3vmin;
+  /* To center an image, set left and right margin to auto and make it into a block element */
+  /*display: block;
     margin-left: auto;
     margin-right: auto;*/
-    padding: 2vmin;
+  padding: 2vmin;
 }
 
 .listen {
-    display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
 }
 
 .listenBox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    /*flex-basis: 100%;*/
-    margin: 10px;
-    /*max-width: 50%;*/
-    /*display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  /*flex-basis: 100%;*/
+  margin: 10px;
+  /*max-width: 50%;*/
+  /*display: block;
     width: 100%;
     margin: 0;
     padding: 0;*/
 }
 
 .titleContainer {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 21vmin;
-    flex-basis: 21vmin;
-    max-width: 25vmin;
-    /*flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 21vmin;
+  flex-basis: 21vmin;
+  max-width: 25vmin;
+  /*flex-grow: 1;
     flex-shrink: 1;*/
-    margin: 10px;
-    /*display: inline-block;
+  margin: 10px;
+  /*display: inline-block;
     width: 50%;
     text-align: left;
     margin-left: 0;
     margin-right: auto;*/
-    color: #273a4b;
-    /*font-family: Arial, Helvetica, sans-serif;*/
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 2.5vmin;
+  color: #273a4b;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 2.5vmin;
 }
 
 .playerContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: right;
-    flex-basis: 50%;
-    margin: 10px;
-    /*display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  flex-basis: 50%;
+  margin: 10px;
+  /*display: block;
     width: 50%;
     margin-left: auto;
     margin-right: 0;
@@ -323,52 +332,52 @@ header, body, footer, h1, h2, h3, h4, h5, h6 {
 }
 
 .leftButtonContainer {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-basis: 25%;
-    margin: 10px;
-    /*display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-basis: 25%;
+  margin: 10px;
+  /*display: inline-block;
     width: 50%;
     margin-left: 0;
     margin-right: auto;
     text-align: left;*/
-    /*font-family: Arial, Helvetica, sans-serif;*/
-    font-family: Verdana, Geneva, sans-serif;
-    /*margin: 10px;*/
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: Verdana, Geneva, sans-serif;
+  /*margin: 10px;*/
 }
 
 .rightButtonContainer {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    flex-basis: 25%;
-    margin: 10px;
-    /*display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-basis: 25%;
+  margin: 10px;
+  /*display: inline-block;
     width: 50%;
     margin-left: auto;
     margin-right: 0;
     text-align: right;*/
-    /*font-family: Arial, Helvetica, sans-serif;*/
-    font-family: Verdana, Geneva, sans-serif;
-    /*margin: 10px;*/
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: Verdana, Geneva, sans-serif;
+  /*margin: 10px;*/
 }
 
 .pauseButton {
-    display: none;
-    background-color: #52aad8;
-    color: #1d2d3b;
+  display: none;
+  background-color: #52aad8;
+  color: #1d2d3b;
 }
 
 .playButton {
-    background-color: #273a4b;
-    color: #ffffff;
+  background-color: #273a4b;
+  color: #ffffff;
 }
 
 .navButton {
-    background-color: #ffffff;
-    color: #273a4b;
-    border: 2px solid #212121;
+  background-color: #ffffff;
+  color: #273a4b;
+  border: 2px solid #212121;
 }
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -376,46 +385,46 @@ header, body, footer, h1, h2, h3, h4, h5, h6 {
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
 #imgSWEVO {
-    /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-    object-fit: cover;
-    /* position the image 0px from the left and -110px from the top inside the content box */
-    object-position: 0 30%;
+  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
+  object-fit: cover;
+  /* position the image 0px from the left and -110px from the top inside the content box */
+  object-position: 0 30%;
 }
 
 #imgSoundEx {
-    object-fit: cover;
-    object-position: 0 35%;
+  object-fit: cover;
+  object-position: 0 35%;
 }
 
 #imgLisTestSwevo {
-    /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-    object-fit: cover;
-    /* position the image 0px from the left and -110px from the top inside the content box */
-    object-position: 0 50%;
+  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
+  object-fit: cover;
+  /* position the image 0px from the left and -110px from the top inside the content box */
+  object-position: 0 50%;
 }
 
 #imgLisTestEvo {
-    /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-    object-fit: cover;
-    /* position the image 0px from the left and -110px from the top inside the content box */
-    object-position: 0;
+  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
+  object-fit: cover;
+  /* position the image 0px from the left and -110px from the top inside the content box */
+  object-position: 0;
 }
 
 #imgZenodo {
-    /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-    /*object-fit: none;*/
-    object-fit: cover;
-    /* object-position: -50% 50%; */
+  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
+  /*object-fit: none;*/
+  object-fit: cover;
+  /* object-position: -50% 50%; */
 }
 
 #imgResGate {
-    /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-    object-fit: cover;
-    /* object-position: -50% 50%; */
+  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
+  object-fit: cover;
+  /* object-position: -50% 50%; */
 }
 
 #imgEvo {
-    /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-    object-fit: cover;
-    object-position: 100% 0;
+  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
+  object-fit: cover;
+  object-position: 100% 0;
 }
