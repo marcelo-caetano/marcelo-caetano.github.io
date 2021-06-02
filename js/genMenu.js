@@ -36,6 +36,13 @@ function genMenu() {
       text: "Software",
     },
     {
+      id: "extra",
+      class: "nav",
+      href: "./extra.html",
+      target: "_self",
+      text: "Extra",
+    },
+    {
       id: "data",
       class: "nav",
       href: "./data.html",
