@@ -107,10 +107,6 @@ h2 {
 h3 {
   text-align: center;
   font-size: 2.5vmin;
-  /*margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;*/
   color: #273a4b;
 }
 
@@ -127,7 +123,6 @@ hr {
 }
 
 nav {
-  /*flex: 1;*/
   background-color: #2a2a2b;
   color: #ffffff;
 }
@@ -180,8 +175,7 @@ figure {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  border: 2px solid #000000;
-  /* object-fit: contain; */
+  border: 1px solid #273a4b;
 }
 
 img {
@@ -197,7 +191,7 @@ img {
 }
 
 figcaption {
-  font-size: 30%;
+  font-size: 60%;
   padding: 0 2vmin 2vmin 2vmin;
 }
 
@@ -265,15 +259,10 @@ h6 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /*   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30% 30% 30%;
-  gap: 5%;
-  max-width: 100%; */
 }
 
 .fig {
-  flex: 30%;
+  flex: 400px;
 }
 
 .titlePost {
