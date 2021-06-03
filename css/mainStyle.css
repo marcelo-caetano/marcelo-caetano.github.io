@@ -112,12 +112,18 @@ h3 {
 
 h4 {
   text-align: center;
-  font-size: 2.25vmin;
+  font-size: 2vmin;
+  color: #273a4b;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1.5vmin;
   color: #52aad8;
 }
 
 hr {
-  border-top: 3px solid #273a4b;
+  border-top: 2px solid #273a4b;
   margin-left: 0;
   margin-right: 0;
 }
