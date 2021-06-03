@@ -203,6 +203,11 @@ figcaption {
   padding: 0 2vmin 2vmin 2vmin;
 }
 
+audio {
+  /* flex: 1; */
+  margin: 5px 20px;
+}
+
 main {
   max-width: 90%;
   margin: auto;
@@ -271,6 +276,34 @@ h6 {
 
 .fig {
   flex: 400px;
+}
+
+/* .sndbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+} */
+
+.snd {
+  flex: 1 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 100px 100px;
+}
+
+.play {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  /* flex: 2; */
+  /* padding: 1vmin; */
+  margin: 5px 20px;
+  text-align: center;
+  font-size: 1.5vmin;
+  color: #52aad8;
 }
 
 .titlePost {
