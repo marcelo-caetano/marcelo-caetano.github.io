@@ -185,7 +185,6 @@ footer {
   text-align: center;
   background-color: #273a4b;
   color: #ffffff;
-  font-size: 1.1vmin;
   padding-top: 2.5vmin;
   padding-bottom: 2.5vmin;
   flex: 1;
@@ -203,7 +202,6 @@ h4,
 h5,
 h6,
 p {
-  /*font-family: Arial, Helvetica, sans-serif;*/
   font-family: Verdana, Geneva, sans-serif;
 }
 
@@ -239,6 +237,10 @@ em {
   color: #273a4b;
 }
 
+footer {
+  font-size: 1.5vmin;
+}
+
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* TABLE LAYOUT */
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -246,7 +248,7 @@ em {
 /* TYPOGRAPHY */
 
 table {
-  font-size: 2vmin;
+  font-size: 1.85vmin;
 }
 
 th {
@@ -343,22 +345,6 @@ th {
   font-size: 1.5rem;
 }
 
-.post {
-  display: flex;
-  flex-direction: row;
-  flex-basis: 100%;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-.textContainer {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 60%;
-}
-
 .figbox {
   display: flex;
   flex-direction: row;
@@ -403,189 +389,14 @@ th {
   /* padding: 1vmin; */
   margin: 5px 20px;
   text-align: center;
-  font-size: 1.5vmin;
+  font-size: 2vmin;
   color: #52aad8;
-}
-
-.titlePost {
-  text-align: left;
-  font-size: 2.8vmin;
-  color: #273a4b;
-  float: right;
-  margin-left: 3vmin;
-  /* To center an image, set left and right margin to auto and make it into a block element */
-  /*display: block;
-    margin-left: auto;
-    margin-right: auto;*/
-  padding: 2vmin;
-}
-
-.textPost {
-  text-align: left;
-  font-size: 2.2vmin;
-  float: right;
-  margin-left: 3vmin;
-  /* To center an image, set left and right margin to auto and make it into a block element */
-  /*display: block;
-    margin-left: auto;
-    margin-right: auto;*/
-  padding: 2vmin;
-}
-
-.listen {
-  display: flex;
-  flex-direction: row;
-  flex-basis: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-.listenBox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-  /*flex-basis: 100%;*/
-  margin: 10px;
-  /*max-width: 50%;*/
-  /*display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;*/
-}
-
-.titleContainer {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  width: 21vmin;
-  flex-basis: 21vmin;
-  max-width: 25vmin;
-  /*flex-grow: 1;
-    flex-shrink: 1;*/
-  margin: 10px;
-  /*display: inline-block;
-    width: 50%;
-    text-align: left;
-    margin-left: 0;
-    margin-right: auto;*/
-  color: #273a4b;
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 2.5vmin;
-}
-
-.playerContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: right;
-  flex-basis: 50%;
-  margin: 10px;
-  /*display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: 0;
-    text-align: right;*/
-}
-
-.leftButtonContainer {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  flex-basis: 25%;
-  margin: 10px;
-  /*display: inline-block;
-    width: 50%;
-    margin-left: 0;
-    margin-right: auto;
-    text-align: left;*/
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  font-family: Verdana, Geneva, sans-serif;
-  /*margin: 10px;*/
-}
-
-.rightButtonContainer {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  flex-basis: 25%;
-  margin: 10px;
-  /*display: inline-block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: 0;
-    text-align: right;*/
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  font-family: Verdana, Geneva, sans-serif;
-  /*margin: 10px;*/
-}
-
-.pauseButton {
-  display: none;
-  background-color: #52aad8;
-  color: #1d2d3b;
-}
-
-.playButton {
-  background-color: #273a4b;
-  color: #ffffff;
-}
-
-.navButton {
-  background-color: #ffffff;
-  color: #273a4b;
-  border: 2px solid #212121;
 }
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* ID */
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
-#imgSWEVO {
-  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-  object-fit: cover;
-  /* position the image 0px from the left and -110px from the top inside the content box */
-  object-position: 0 30%;
-}
-
-#imgSoundEx {
-  object-fit: cover;
-  object-position: 0 35%;
-}
-
-#imgLisTestSwevo {
-  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-  object-fit: cover;
-  /* position the image 0px from the left and -110px from the top inside the content box */
-  object-position: 0 50%;
-}
-
-#imgLisTestEvo {
-  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-  object-fit: cover;
-  /* position the image 0px from the left and -110px from the top inside the content box */
-  object-position: 0;
-}
-
-#imgZenodo {
-  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-  /*object-fit: none;*/
-  object-fit: cover;
-  /* object-position: -50% 50%; */
-}
-
-#imgResGate {
-  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-  object-fit: cover;
-  /* object-position: -50% 50%; */
-}
-
-#imgEvo {
-  /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit */
-  object-fit: cover;
-  object-position: 100% 0;
+#tab2 {
+  min-width: 1000px;
 }

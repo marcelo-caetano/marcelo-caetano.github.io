@@ -172,8 +172,8 @@
             </section>
 
             <p>
-              Below are the figures and the final table for all 12 windows
-              tested.
+              Below are the figures and the table with the final model
+              parameters for all 12 windows tested.
             </p>
 
             <section>
@@ -565,19 +565,19 @@
             <hr />
 
             <section>
-              <h4>Table with Final Parameters</h4>
+              <h4>Table with Final Model Parameters</h4>
               <p>
                 The table below corresponds to Table 2 in Sec 3.1 of
                 <a
                   href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
                   target="_blank"
                   >[Caetano & Depalle 2021]</a
-                >
+                >.
               </p>
 
               <div class="tablebox">
                 <div class="table">
-                  <table>
+                  <table id="tab2">
                     <caption>
                       Table 2: Line fit parameters and coefficient of
                       determination
@@ -608,28 +608,28 @@
                         <td>0.22919</td>
                         <td>-0.69315</td>
                         <td>-1.0288</td>
-                        <td>1</td>
+                        <td>1.00000</td>
                       </tr>
                       <tr>
                         <th scope="row">Hanning</th>
                         <td>0.22919</td>
                         <td>-0.69315</td>
                         <td>-1.0288</td>
-                        <td>1</td>
+                        <td>1.00000</td>
                       </tr>
                       <tr>
                         <th scope="row">Blackman</th>
                         <td>0.1306</td>
                         <td>-0.29599</td>
                         <td>-5.5907</td>
-                        <td>0.9</td>
+                        <td>0.90000</td>
                       </tr>
                       <tr>
                         <th scope="row">Blackman-Harris</th>
                         <td>0.16554</td>
                         <td>-7.4991&times;10<sup>-5</sup></td>
                         <td>-0.72627</td>
-                        <td>0.9</td>
+                        <td>0.90000</td>
                       </tr>
                       <tr>
                         <th scope="row">Hamming</th>
@@ -657,21 +657,21 @@
                         <td>0.28326</td>
                         <td>-0.69315</td>
                         <td>0.70529</td>
-                        <td>1</td>
+                        <td>1.00000</td>
                       </tr>
                       <tr>
                         <th scope="row">Nuttall</th>
                         <td>0.081601</td>
                         <td>-0.29599</td>
                         <td>-4.4272</td>
-                        <td>0.9</td>
+                        <td>0.90000</td>
                       </tr>
                       <tr>
                         <th scope="row">Dolph-Chebychev</th>
                         <td>0.085039</td>
                         <td>-3.9824&times;10<sup>-3</sup></td>
                         <td>-4.3969</td>
-                        <td>0.8</td>
+                        <td>0.80000</td>
                       </tr>
                       <tr>
                         <th scope="row">Tukey</th>
@@ -1089,7 +1089,7 @@
             <hr />
 
             <section>
-              <h4>Table with Minumum Zero-Padding Factor</h4>
+              <h4>Table with Minimum Zero-Padding Factor</h4>
               <p>
                 The table below corresponds to Table 3 in Sec. 4.1 of
                 <a
@@ -1106,7 +1106,7 @@
                       <var>L</var>
                       where
                       <strong>ZP-Log-PI</strong>
-                      results in estimation error smaller than
+                      results in an estimation error lower than that of
                       <strong>Pow-PI</strong
                       >.
                     </caption>
@@ -1593,6 +1593,104 @@
                       factor for the Tukey window.
                     </figcaption>
                   </figure>
+                </div>
+              </div>
+            </section>
+
+            <hr />
+
+            <section>
+              <h4>
+                Table with Maximum Amplitude and Frequency Bin Estimation Error
+                for Power Scaling
+              </h4>
+              <p>
+                The table below corresponds to Table 4 in Sec. 4.2 of
+                <a
+                  href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
+                  target="_blank"
+                  >[Caetano & Depalle 2021]</a
+                >.
+              </p>
+              <div class="tablebox">
+                <div class="table">
+                  <table>
+                    <caption>
+                      Table 4: Maximum amplitude and frequency estimation errors
+                      for power scaling parabolic interpolation when
+                      <var>N</var
+                      >=<var>M</var>=512.
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Window</th>
+                        <th scope="col">Amplitude error</th>
+                        <th scope="col">Frequency error</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Bartlett</th>
+                        <td>1.193&times;10<sup>-3</sup></td>
+                        <td>5.878&times;10<sup>-4</sup></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hann</th>
+                        <td>9.642&times;10<sup>-4</sup></td>
+                        <td>5.726&times;10<sup>-4</sup></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hanning</th>
+                        <td>9.642&times;10<sup>-4</sup></td>
+                        <td>5.726&times;10<sup>-4</sup></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Blackman</th>
+                        <td>6.691&times;10<sup>-5</sup></td>
+                        <td>8.194&times;10<sup>-5</sup></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Blackman-Harris</th>
+                        <td>1.092&times;10<sup>-5</sup></td>
+                        <td>1.941&times;10<sup>-5</sup></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hamming</th>
+                        <td>1.177&times;10<sup>-3</sup></td>
+                        <td>4.099&times;10<sup>-4</sup></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Bartlett-Hann</th>
+                        <td>9.588&times;10<sup>-4</sup></td>
+                        <td>5.377&times;10<sup>-4</sup></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gaussian</th>
+                        <td>2.198&times;10<sup>-4</sup></td>
+                        <td>1.599&times;10<sup>-4</sup></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kaiser-Bessel</th>
+                        <td>2.207&times;10<sup>-1</sup></td>
+                        <td>1.753&times;10<sup>-1</sup></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Nuttall</th>
+                        <td>1.202&times;10<sup>-5</sup></td>
+                        <td>1.803&times;10<sup>-5</sup></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Dolph-Chebychev</th>
+                        <td>1.689&times;10<sup>-5</sup></td>
+                        <td>1.823&times;10<sup>-5</sup></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tukey</th>
+                        <td>7.782&times;10<sup>-2</sup></td>
+                        <td>2.130&times;10<sup>-2</sup></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </section>
@@ -2170,7 +2268,7 @@
               <h4>Reference</h4>
               <p>
                 <em
-                  ><strong>[Werner & Germain 2016]</strong> KJ Werner & FG
+                  ><strong>[Werner & Germain 2016]</strong> K.J. Werner & F.G.
                   Germain "Sinusoidal Parameter Estimation Using Quadratic
                   Interpolation around Power-Scaled Magnitude Spectrum Peaks"
                   Applied Sciences. 2016; 6(10):306.
