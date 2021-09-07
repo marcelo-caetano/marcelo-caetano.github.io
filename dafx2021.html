@@ -29,101 +29,155 @@
           <h2>Additional Results</h2>
 
           <p>
-            This is the companion webpage for the DAFx 2021 article "On the
-            Estimation of Sinusoidal Parameters via Parabolic Interpolation of
-            Scaled Magnitude Spectra". Here you will find additional results
-            that could not be included in the article due to a lack of space.
+            This is the companion webpage for the DAFx 2021 article
+            <em
+              >M. Caetano & P. Depalle. "On the Estimation of Sinusoidal
+              Parameters via Parabolic Interpolation of Scaled Magnitude
+              Spectra" In: Proceedings of the 24<sup>th</sup> International
+              Conference on Digital Audio Effects (DAFx20in21), Vienna, Austria,
+              September 8-10, 2021.</em
+            >
+            (<a
+              href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
+              target="_blank"
+              >[Caetano & Depalle 2021]</a
+            >). Here you will find additional results that could not be included
+            in the article due to a lack of space.
           </p>
 
           <article>
             <h3>Figures and Tables</h3>
 
             <section>
-              <h4>Original Values From [Werner & Germain 2016]</h4>
-              <div class="tablebox">
-                <div class="table">
-                <table>
-                <caption> Optimum value of power scaling factor <var>p</var> for windows of different size <var>M</var> (in samples). Values reproduced from [Werner & Germain 2016]. </caption>
-                <thead>
-                <tr>
-                <th scope="col"> <var> M </var> </th> <th scope="col"> 512 </th> <th scope="col"> 1024 </th> <th scope="col"> 2048 </th> <th scope="col"> 4096 </th></tr>
-                </thead>
-                <tbody>
-                <tr>
-                <th scope="row"> Bartlett </th> <td> 0.2253 </td> <td> 0.22535 </td> <td> 0.22538 </td> <td> 0.22539 </td> </tr>
-                <tr>
-                <th scope="row"> Hann </th> <td> 0.22903 </td> <td> 0.22911 </td> <td> 0.22915 </td> <td> 0.22917 </td> </tr>
-                <tr>
-                <th scope="row"> Blackman </th> <td> 0.13056 </td> <td> 0.13057 </td> <td> 0.13058 </td> <td> 0.13058 </td> </tr>
-                <tr>
-                <th scope="row"> Blackman-Harris </th> <td> 0.08552 </td> <td> 0.08553 </td> <td> 0.08553 </td> <td> 0.08554 </td> </tr>
-                <tr>
-                <th scope="row"> Hamming </th> <td> 0.18505 </td> <td> 0.18575 </td> <td> 0.18611 </td> <td> 0.18628 </td> </tr>
-                <tr>
-                <th scope="row"> Bartlett-Hann </th> <td> 0.21635 </td> <td> 0.21642 </td> <td> 0.21645 </td> <td> 0.21647 </td> </tr>
-                <tr>
-                <th scope="row"> Gaussian </th> <td> 0.12024 </td> <td> 0.12074 </td> <td> 0.12099 </td> <td> 0.12112 </td> </tr>
-                <tr>
-                <th scope="row"> Slepian </th> <td> 0.11144 </td> <td> 0.11144 </td> <td> 0.11144 </td> <td> 0.11144 </td> </tr>
-                <tr>
-                <th scope="row"> Kaiser-Bessel </th> <td> 0.28214 </td> <td> 0.2827 </td> <td> 0.28298 </td> <td> 0.28312 </td> </tr>
-                <tr>
-                <th scope="row"> Nuttall </th> <td> 0.08153 </td> <td> 0.08155 </td> <td> 0.08157 </td> <td> 0.08157 </td> </tr>
-                <tr>
-                <th scope="row"> Dolph-Chebychev </th> <td> 0.08403 </td> <td> 0.08403 </td> <td> 0.08404 </td> <td> 0.08404 </td> </tr>
-                <tr>
-                <th scope="row"> Tukey </th> <td> 0.50592 </td> <td> 0.50609 </td> <td> 0.50618 </td> <td> 0.50622 </td> </tr>
-                </tbody>
-                </table>
-              </div>
-              </div>
+              <h4>Original Values for Optimal Power Scale <var>p</var></h4>
 
-            </section>
-
-            <p>Below are the figures for all 12 windows tested.</p>
-
-            <section>
-              <h4>Maximizing the Line Fit</h4>
-
+              <p>
+                The table below corresponds to Table 1 in Sec 2.2 of
+                <a
+                  href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
+                  target="_blank"
+                  >[Caetano & Depalle 2021]</a
+                >.
+              </p>
               <div class="tablebox">
                 <div class="table">
                   <table>
-                  <caption> Line fit parameters and coefficient of determination <var>R<sup>2</sup></var> for the windows under investigation. </caption>
-                  <thead>
-                  <tr>
-                  <th scope="col"> Window </th> <th scope="col"> <var>&kappa;</var> </th> <th scope="col"> <var>a</var> </th> <th scope="col"> <var>b</var> </th> <th scope="col"> <var>R<sup>2</sup></var> </th></tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                  <th scope="row"> Bartlett </th> <td> 0.2254 </td> <td> -0.81377 </td> <td> -0.37339 </td> <td> 0.99689 </td> </tr>
-                  <tr>
-                  <th scope="row"> Hann </th> <td> 0.22919 </td> <td> -0.69315 </td> <td> -1.0288 </td> <td> 1 </td> </tr>
-                  <tr>
-                  <th scope="row"> Blackman </th> <td> 0.1306 </td> <td> -0.29599 </td> <td> -5.5907 </td> <td> 0.9 </td> </tr>
-                  <tr>
-                  <th scope="row"> Blackman-Harris </th> <td> 0.16554 </td> <td> -7.4991e-05 </td> <td> -0.72627 </td> <td> 0.9 </td> </tr>
-                  <tr>
-                  <th scope="row"> Hamming </th> <td> 0.18645 </td> <td> -0.70779 </td> <td> 1.481 </td> <td> 0.99993 </td> </tr>
-                  <tr>
-                  <th scope="row"> Bartlett-Hann </th> <td> 0.21649 </td> <td> -0.6291 </td> <td> -1.6925 </td> <td> 0.99828 </td> </tr>
-                  <tr>
-                  <th scope="row"> Gaussian </th> <td> 0.12125 </td> <td> -0.67356 </td> <td> 1.2765 </td> <td> 0.99999 </td> </tr>
-                  <tr>
-                  <th scope="row"> Slepian </th> <td> 0.11144 </td> <td> -0 </td> <td> -0.11144 </td> <td> -Inf </td> </tr>
-                  <tr>
-                  <th scope="row"> Kaiser-Bessel </th> <td> 0.28326 </td> <td> -0.69315 </td> <td> 0.70529 </td> <td> 1 </td> </tr>
-                  <tr>
-                  <th scope="row"> Nuttall </th> <td> 0.081601 </td> <td> -0.29599 </td> <td> -4.4272 </td> <td> 0.9 </td> </tr>
-                  <tr>
-                  <th scope="row"> Dolph-Chebychev </th> <td> 0.085039 </td> <td> -0.0039824 </td> <td> -4.3969 </td> <td> 0.8 </td> </tr>
-                  <tr>
-                  <th scope="row"> Tukey </th> <td> 0.50626 </td> <td> -0.7241 </td> <td> -0.78342 </td> <td> 0.99972 </td> </tr>
-                  </tbody>
+                    <caption>
+                      Table 1: Optimum value of the power scaling factor
+                      <var>p</var>
+                      for twelve windows of four different sizes
+                      <var>M</var>
+                      in samples. Values reproduced from
+                      <em>[Werner & Germain 2016]</em
+                      >.
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col"><var> M </var></th>
+                        <th scope="col">512</th>
+                        <th scope="col">1024</th>
+                        <th scope="col">2048</th>
+                        <th scope="col">4096</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Bartlett</th>
+                        <td>0.2253</td>
+                        <td>0.22535</td>
+                        <td>0.22538</td>
+                        <td>0.22539</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hann</th>
+                        <td>0.22903</td>
+                        <td>0.22911</td>
+                        <td>0.22915</td>
+                        <td>0.22917</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hanning</th>
+                        <td>0.22903</td>
+                        <td>0.22911</td>
+                        <td>0.22915</td>
+                        <td>0.22917</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Blackman</th>
+                        <td>0.13056</td>
+                        <td>0.13057</td>
+                        <td>0.13058</td>
+                        <td>0.13058</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Blackman-Harris</th>
+                        <td>0.08552</td>
+                        <td>0.08553</td>
+                        <td>0.08553</td>
+                        <td>0.08554</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hamming</th>
+                        <td>0.18505</td>
+                        <td>0.18575</td>
+                        <td>0.18611</td>
+                        <td>0.18628</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Bartlett-Hann</th>
+                        <td>0.21635</td>
+                        <td>0.21642</td>
+                        <td>0.21645</td>
+                        <td>0.21647</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gaussian</th>
+                        <td>0.12024</td>
+                        <td>0.12074</td>
+                        <td>0.12099</td>
+                        <td>0.12112</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kaiser-Bessel</th>
+                        <td>0.28214</td>
+                        <td>0.28270</td>
+                        <td>0.28298</td>
+                        <td>0.28312</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Nuttall</th>
+                        <td>0.08153</td>
+                        <td>0.08155</td>
+                        <td>0.08157</td>
+                        <td>0.08157</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Dolph-Chebychev</th>
+                        <td>0.08403</td>
+                        <td>0.08403</td>
+                        <td>0.08404</td>
+                        <td>0.08404</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tukey</th>
+                        <td>0.50592</td>
+                        <td>0.50609</td>
+                        <td>0.50618</td>
+                        <td>0.50622</td>
+                      </tr>
+                    </tbody>
                   </table>
-
                 </div>
-
               </div>
+            </section>
+
+            <p>
+              Below are the figures and the final table for all 12 windows
+              tested.
+            </p>
+
+            <section>
+              <h4>Maximizing the Line Fit</h4>
 
               <div class="figbox">
                 <div class="fig">
@@ -504,6 +558,130 @@
                       Resulting curve fit for the Tukey window.
                     </figcaption>
                   </figure>
+                </div>
+              </div>
+            </section>
+
+            <hr />
+
+            <section>
+              <h4>Table with Final Parameters</h4>
+              <p>
+                The table below corresponds to Table 2 in Sec 3.1 of
+                <a
+                  href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
+                  target="_blank"
+                  >[Caetano & Depalle 2021]</a
+                >
+              </p>
+
+              <div class="tablebox">
+                <div class="table">
+                  <table>
+                    <caption>
+                      Table 2: Line fit parameters and coefficient of
+                      determination
+                      <var>R<sup>2</sup></var>
+                      for the twelve windows under investigation.
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Window</th>
+                        <th scope="col"><var>&kappa;</var></th>
+                        <th scope="col"><var>a</var></th>
+                        <th scope="col"><var>b</var></th>
+                        <th scope="col">
+                          <var>R<sup>2</sup></var>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Bartlett</th>
+                        <td>0.2254</td>
+                        <td>-0.81377</td>
+                        <td>-0.37339</td>
+                        <td>0.99689</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hann</th>
+                        <td>0.22919</td>
+                        <td>-0.69315</td>
+                        <td>-1.0288</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hanning</th>
+                        <td>0.22919</td>
+                        <td>-0.69315</td>
+                        <td>-1.0288</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Blackman</th>
+                        <td>0.1306</td>
+                        <td>-0.29599</td>
+                        <td>-5.5907</td>
+                        <td>0.9</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Blackman-Harris</th>
+                        <td>0.16554</td>
+                        <td>-7.4991&times;10<sup>-5</sup></td>
+                        <td>-0.72627</td>
+                        <td>0.9</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hamming</th>
+                        <td>0.18645</td>
+                        <td>-0.70779</td>
+                        <td>1.481</td>
+                        <td>0.99993</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Bartlett-Hann</th>
+                        <td>0.21649</td>
+                        <td>-0.6291</td>
+                        <td>-1.6925</td>
+                        <td>0.99828</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gaussian</th>
+                        <td>0.12125</td>
+                        <td>-0.67356</td>
+                        <td>1.2765</td>
+                        <td>0.99999</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kaiser-Bessel</th>
+                        <td>0.28326</td>
+                        <td>-0.69315</td>
+                        <td>0.70529</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Nuttall</th>
+                        <td>0.081601</td>
+                        <td>-0.29599</td>
+                        <td>-4.4272</td>
+                        <td>0.9</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Dolph-Chebychev</th>
+                        <td>0.085039</td>
+                        <td>-3.9824&times;10<sup>-3</sup></td>
+                        <td>-4.3969</td>
+                        <td>0.8</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tukey</th>
+                        <td>0.50626</td>
+                        <td>-0.7241</td>
+                        <td>-0.78342</td>
+                        <td>0.99972</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </section>
@@ -904,6 +1082,112 @@
                       the zero-padding factor for the Tukey window.
                     </figcaption>
                   </figure>
+                </div>
+              </div>
+            </section>
+
+            <hr />
+
+            <section>
+              <h4>Table with Minumum Zero-Padding Factor</h4>
+              <p>
+                The table below corresponds to Table 3 in Sec. 4.1 of
+                <a
+                  href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
+                  target="_blank"
+                  >[Caetano & Depalle 2021]</a
+                >.
+              </p>
+              <div class="tablebox">
+                <div class="table">
+                  <table>
+                    <caption>
+                      Table 3: Minimum zero-padding factor
+                      <var>L</var>
+                      where
+                      <strong>ZP-Log-PI</strong>
+                      results in estimation error smaller than
+                      <strong>Pow-PI</strong
+                      >.
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Window</th>
+                        <th scope="col">
+                          min <var>L</var> for amplitude error &epsilon;<sub
+                            >a</sub
+                          >
+                        </th>
+                        <th scope="col">
+                          min <var>L</var> for frequency bin error &epsilon;<sub
+                            >&nu;</sub
+                          >
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Bartlett</th>
+                        <td>2</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hann</th>
+                        <td>2</td>
+                        <td>6</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hanning</th>
+                        <td>2</td>
+                        <td>6</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Blackman</th>
+                        <td>3</td>
+                        <td>13</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Blackman-Harris</th>
+                        <td>4</td>
+                        <td>> 16</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hamming</th>
+                        <td>2</td>
+                        <td>6</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Bartlett-Hann</th>
+                        <td>2</td>
+                        <td>6</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gaussian</th>
+                        <td>3</td>
+                        <td>9</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Kaiser-Bessel</th>
+                        <td>1</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Nuttall</th>
+                        <td>4</td>
+                        <td>> 16</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Dolph-Chebychev</th>
+                        <td>4</td>
+                        <td>> 16</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tukey</th>
+                        <td>1</td>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </section>
@@ -1400,13 +1684,13 @@
                     <p class="label">Original</p>
                     <audio controls>
                       <source
-                        src="./2021dafx/audio/singing/singing_Male_Western.wav"
+                        src="./2021dafx/audio/singing/singing_male_western.wav"
                         type="audio/wav"
                       />
                       <p>
                         Your browser doesn't support HTML5 audio. Here is a
                         <a
-                          href="./2021dafx/audio/singing/singing_Male_Western.wav"
+                          href="./2021dafx/audio/singing/singing_male_western.wav"
                           >link to the audio</a
                         >
                         instead.
@@ -1555,7 +1839,7 @@
                   <p class="label">Log Scaling</p>
                   <figure>
                     <img
-                      src="./2021dafx/img/sndex/violin/violin_ord_a4_ff_log_wav.png"
+                      src="./2021dafx/img/sndex/violin/violin_ord_A4_ff_log_wav.png"
                       width="526"
                       height="289"
                       alt="Waveform of an A4 note played fortissimo on a Violin"
@@ -1582,13 +1866,13 @@
                     <p class="label">Sinusoidal component</p>
                     <audio controls>
                       <source
-                        src="./2021dafx/audio/violin/violin_ord_a4_ff_log_sin.wav"
+                        src="./2021dafx/audio/violin/violin_ord_A4_ff_log_sin.wav"
                         type="audio/wav"
                       />
                       <p>
                         Your browser doesn't support HTML5 audio. Here is a
                         <a
-                          href="./2021dafx/audio/violin/violin_ord_a4_ff_log_sin.wav"
+                          href="./2021dafx/audio/violin/violin_ord_A4_ff_log_sin.wav"
                           >link to the audio</a
                         >
                         instead.
@@ -1599,13 +1883,13 @@
                     <p class="label">Residual component</p>
                     <audio controls>
                       <source
-                        src="./2021dafx/audio/violin/violin_ord_a4_ff_log_res.wav"
+                        src="./2021dafx/audio/violin/violin_ord_A4_ff_log_res.wav"
                         type="audio/wav"
                       />
                       <p>
                         Your browser doesn't support HTML5 audio. Here is a
                         <a
-                          href="./2021dafx/audio/violin/violin_ord_a4_ff_log_res.wav"
+                          href="./2021dafx/audio/violin/violin_ord_A4_ff_log_res.wav"
                           >link to the audio</a
                         >
                         instead.
@@ -1618,13 +1902,13 @@
                     </p>
                     <audio controls>
                       <source
-                        src="./2021dafx/audio/violin/violin_ord_a4_ff_log_res_norm.wav"
+                        src="./2021dafx/audio/violin/violin_ord_A4_ff_log_res_norm.wav"
                         type="audio/wav"
                       />
                       <p>
                         Your browser doesn't support HTML5 audio. Here is a
                         <a
-                          href="./2021dafx/audio/violin/violin_ord_a4_ff_log_res_norm.wav"
+                          href="./2021dafx/audio/violin/violin_ord_A4_ff_log_res_norm.wav"
                           >link to the audio</a
                         >
                         instead.
@@ -1637,7 +1921,7 @@
                   <p class="label">Power Scaling</p>
                   <figure>
                     <img
-                      src="./2021dafx/img/sndex/violin/violin_ord_a4_ff_pow_wav.png"
+                      src="./2021dafx/img/sndex/violin/violin_ord_A4_ff_pow_wav.png"
                       width="526"
                       height="289"
                       alt="Waveform of an A4 note played fortissimo on a Violin"
@@ -1664,13 +1948,13 @@
                     <p class="label">Sinusoidal component</p>
                     <audio controls>
                       <source
-                        src="./2021dafx/audio/violin/violin_ord_a4_ff_pow_sin.wav"
+                        src="./2021dafx/audio/violin/violin_ord_A4_ff_pow_sin.wav"
                         type="audio/wav"
                       />
                       <p>
                         Your browser doesn't support HTML5 audio. Here is a
                         <a
-                          href="./2021dafx/audio/violin/violin_ord_a4_ff_pow_sin.wav"
+                          href="./2021dafx/audio/violin/violin_ord_A4_ff_pow_sin.wav"
                           >link to the audio</a
                         >
                         instead.
@@ -1681,13 +1965,13 @@
                     <p class="label">Residual component</p>
                     <audio controls>
                       <source
-                        src="./2021dafx/audio/violin/violin_ord_a4_ff_pow_res.wav"
+                        src="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res.wav"
                         type="audio/wav"
                       />
                       <p>
                         Your browser doesn't support HTML5 audio. Here is a
                         <a
-                          href="./2021dafx/audio/violin/violin_ord_a4_ff_pow_res.wav"
+                          href="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res.wav"
                           >link to the audio</a
                         >
                         instead.
@@ -1700,13 +1984,13 @@
                     </p>
                     <audio controls>
                       <source
-                        src="./2021dafx/audio/violin/violin_ord_a4_ff_pow_res_norm.wav"
+                        src="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res_norm.wav"
                         type="audio/wav"
                       />
                       <p>
                         Your browser doesn't support HTML5 audio. Here is a
                         <a
-                          href="./2021dafx/audio/violin/violin_ord_a4_ff_pow_res_norm.wav"
+                          href="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res_norm.wav"
                           >link to the audio</a
                         >
                         instead.
@@ -1881,6 +2165,20 @@
                   </div>
                 </div>
               </div>
+            </section>
+            <section>
+              <h4>Reference</h4>
+              <p>
+                <em
+                  ><strong>[Werner & Germain 2016]</strong> KJ Werner & FG
+                  Germain "Sinusoidal Parameter Estimation Using Quadratic
+                  Interpolation around Power-Scaled Magnitude Spectrum Peaks"
+                  Applied Sciences. 2016; 6(10):306.
+                  <a href="https://doi.org/10.3390/app6100306" target="_blank"
+                    >DOI:app6100306</a
+                  ></em
+                >
+              </p>
             </section>
           </article>
         </main>
