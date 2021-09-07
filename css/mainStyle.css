@@ -181,7 +181,6 @@ figure {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  /* border: 1px solid #273a4b; */
 }
 
 img {
@@ -204,7 +203,6 @@ figcaption {
 }
 
 audio {
-  /* flex: 1; */
   margin: 5px 20px;
 }
 
@@ -236,6 +234,95 @@ h6 {
   font-family: Verdana, Geneva, sans-serif;
 }
 
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* TABLE LAYOUT */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+/* TYPOGRAPHY */
+
+table {
+  font-size: 2vmin;
+}
+
+th {
+  font-size: 2vmin;
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+caption {
+  font-size: 1.7vmin;
+}
+
+tbody {
+  font-size: 1.8vmin;
+}
+
+/* SPACING */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: top;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 17.5%;
+}
+
+thead th:nth-child(3) {
+  width: 17.5%;
+}
+
+thead th:nth-child(4) {
+  width: 17.5%;
+}
+
+thead th:nth-child(5) {
+  width: 17.5%;
+}
+
+thead {
+  border-top: 2px solid #273a4b;
+  border-bottom: 2px solid #273a4b;
+  font-size: 2.2vmin;
+  margin: 5px;
+}
+
+tbody {
+  border-bottom: 2px solid #273a4b;
+  margin: 5px auto;
+}
+
+th, td {
+  padding: 0.4em 10px;
+}
+
+/* GRAPHICS & COLORS */
+
+th {
+  color: #273a4b;
+}
+
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* CLASS */
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
@@ -254,10 +341,8 @@ h6 {
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
-  /*flex-wrap: wrap;*/
   align-items: center;
   justify-content: center;
-  /*max-width: 100%;*/
   margin: 10px;
   padding: 10px;
 }
@@ -278,12 +363,22 @@ h6 {
   flex: 400px;
 }
 
-/* .sndbox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 50px;
-} */
+.tablebox {
+  width: 100%;
+  padding: 10px;
+}
+
+.table {
+  /* width: 75%; */
+  max-width: 75%;
+  min-width: 550px;
+    /* To center an image, set left and right margin to auto and make it into a block element */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .snd {
   flex: 1 400px;
