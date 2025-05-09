@@ -1,2293 +1,2290 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <html>
-    <head>
-      <title>DAFx 2021</title>
+  <head>
+    <title>DAFx 2021</title>
 
-      <meta content="text/html" http-equiv="content-type" />
-      <meta charset="utf-8" />
+    <meta content="text/html" http-equiv="content-type" />
+    <meta charset="utf-8" />
 
-      <meta
-        name="keywords"
-        content="signal processing, music technology, musical timbre"
-      />
-      <meta name="author" content="Marcelo Caetano" />
-      <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="keywords"
+      content="signal processing, music technology, musical timbre"
+    />
+    <meta name="author" content="Marcelo Caetano" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-      <script src="./js/genMenu.js"></script>
-      <script src="./js/genFooter.js"></script>
+    <script src="./js/genMenu.js"></script>
+    <script src="./js/genFooter.js"></script>
 
-      <link rel="stylesheet" type="text/css" href="./css/mainStyle.css" />
-    </head>
+    <link rel="stylesheet" type="text/css" href="./css/mainStyle.css" />
+  </head>
 
-    <body>
-      <nav id="menu"></nav>
-      <div class="content">
-        <header>DAFx 2021</header>
-        <main>
-          <h2>Additional Results</h2>
+  <body>
+    <nav id="menu"></nav>
+    <div class="content">
+      <header>DAFx 2021</header>
+      <main>
+        <h2>Additional Results</h2>
 
-          <p>
-            This is the companion webpage for the DAFx 2021 article
-            <em
-              >M. Caetano & P. Depalle. "On the Estimation of Sinusoidal
-              Parameters via Parabolic Interpolation of Scaled Magnitude
-              Spectra" In: Proceedings of the 24<sup>th</sup> International
-              Conference on Digital Audio Effects (DAFx20in21), Vienna, Austria,
-              September 8-10, 2021.</em
-            >
-            (<a
-              href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
-              target="_blank"
-              >[Caetano & Depalle 2021]</a
-            >). Here you will find additional results that could not be included
-            in the article due to a lack of space.
-          </p>
+        <p>
+          This is the companion webpage for the DAFx 2021 article
+          <em
+            >M. Caetano & P. Depalle. "On the Estimation of Sinusoidal
+            Parameters via Parabolic Interpolation of Scaled Magnitude Spectra"
+            In: Proceedings of the 24<sup>th</sup> International Conference on
+            Digital Audio Effects (DAFx20in21), Vienna, Austria, September 8-10,
+            2021.</em
+          >
+          (<a
+            href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
+            target="_blank"
+            >[Caetano & Depalle 2021]</a
+          >). Here you will find additional results that could not be included
+          in the article due to a lack of space.
+        </p>
 
-          <article>
-            <h3>Figures and Tables</h3>
+        <article>
+          <h3>Figures and Tables</h3>
 
-            <section>
-              <h4>Original Values for Optimal Power Scale <var>p</var></h4>
-
-              <p>
-                The table below corresponds to Table 1 in Sec 2.2 of
-                <a
-                  href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
-                  target="_blank"
-                  >[Caetano & Depalle 2021]</a
-                >.
-              </p>
-              <div class="tablebox">
-                <div class="table">
-                  <table>
-                    <caption>
-                      Table 1: Optimum value of the power scaling factor
-                      <var>p</var>
-                      for twelve windows of four different sizes
-                      <var>M</var>
-                      in samples. Values reproduced from
-                      <em>[Werner & Germain 2016]</em
-                      >.
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th scope="col"><var> M </var></th>
-                        <th scope="col">512</th>
-                        <th scope="col">1024</th>
-                        <th scope="col">2048</th>
-                        <th scope="col">4096</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">Bartlett</th>
-                        <td>0.2253</td>
-                        <td>0.22535</td>
-                        <td>0.22538</td>
-                        <td>0.22539</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hann</th>
-                        <td>0.22903</td>
-                        <td>0.22911</td>
-                        <td>0.22915</td>
-                        <td>0.22917</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hanning</th>
-                        <td>0.22903</td>
-                        <td>0.22911</td>
-                        <td>0.22915</td>
-                        <td>0.22917</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Blackman</th>
-                        <td>0.13056</td>
-                        <td>0.13057</td>
-                        <td>0.13058</td>
-                        <td>0.13058</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Blackman-Harris</th>
-                        <td>0.08552</td>
-                        <td>0.08553</td>
-                        <td>0.08553</td>
-                        <td>0.08554</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hamming</th>
-                        <td>0.18505</td>
-                        <td>0.18575</td>
-                        <td>0.18611</td>
-                        <td>0.18628</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Bartlett-Hann</th>
-                        <td>0.21635</td>
-                        <td>0.21642</td>
-                        <td>0.21645</td>
-                        <td>0.21647</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Gaussian</th>
-                        <td>0.12024</td>
-                        <td>0.12074</td>
-                        <td>0.12099</td>
-                        <td>0.12112</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Kaiser-Bessel</th>
-                        <td>0.28214</td>
-                        <td>0.28270</td>
-                        <td>0.28298</td>
-                        <td>0.28312</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Nuttall</th>
-                        <td>0.08153</td>
-                        <td>0.08155</td>
-                        <td>0.08157</td>
-                        <td>0.08157</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Dolph-Chebychev</th>
-                        <td>0.08403</td>
-                        <td>0.08403</td>
-                        <td>0.08404</td>
-                        <td>0.08404</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Tukey</th>
-                        <td>0.50592</td>
-                        <td>0.50609</td>
-                        <td>0.50618</td>
-                        <td>0.50622</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </section>
+          <section>
+            <h4>Original Values for Optimal Power Scale <var>p</var></h4>
 
             <p>
-              Below are the figures and the table with the final model
-              parameters for all 12 windows tested.
+              The table below corresponds to Table 1 in Sec 2.2 of
+              <a
+                href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
+                target="_blank"
+                >[Caetano & Depalle 2021]</a
+              >.
             </p>
-
-            <section>
-              <h4>Maximizing the Line Fit</h4>
-
-              <div class="figbox">
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_bartlett.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Bartlett window"
-                      title="Maximixing the linearity of the Bartlett window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Bartlett window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_hann.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Hann window"
-                      title="Maximixing the linearity of the Hann window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_hanning.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Hanning window"
-                      title="Maximixing the linearity of the Hanning window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Hanning window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_hamming.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Hamming window"
-                      title="Maximixing the linearity of the Hamming window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Hamming window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_blackman.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Blackman window"
-                      title="Maximixing the linearity of the Blackman window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Blackman window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_blackman_harris.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Blackman-Harris window"
-                      title="Maximixing the linearity of the Blackman-Harris window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Blackman-Harris window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_bartlett_hann.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Bartlett-Hann window"
-                      title="Maximixing the linearity of the Bartlett-Hann window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Bartlett-Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_gaussian.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Gaussian window"
-                      title="Maximixing the linearity of the Gaussian window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Gaussian window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_kaiser_bessel.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Kaiser-Bessel window"
-                      title="Maximixing the linearity of the Kaiser-Bessel window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Kaiser-Bessel window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_nuttall.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Nuttall window"
-                      title="Maximixing the linearity of the Nuttall window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Nuttall window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_dolph_chebychev.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Dolph-Chebychev window"
-                      title="Maximixing the linearity of the Dolph-Chebychev window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Dolph-Chebychev window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/kappa/kappa_tukey.png"
-                      width="526"
-                      height="289"
-                      alt="Coefficient of determination as a function of the variable kappa for the Tukey window"
-                      title="Maximixing the linearity of the Tukey window."
-                    />
-                    <figcaption>
-                      Coefficient of determination as a function of the variable
-                      kappa for the Tukey window.
-                    </figcaption>
-                  </figure>
-                </div>
+            <div class="tablebox">
+              <div class="table">
+                <table>
+                  <caption>
+                    Table 1: Optimum value of the power scaling factor
+                    <var>p</var>
+                    for twelve windows of four different sizes
+                    <var>M</var>
+                    in samples. Values reproduced from
+                    <em>[Werner & Germain 2016]</em
+                    >.
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col"><var> M </var></th>
+                      <th scope="col">512</th>
+                      <th scope="col">1024</th>
+                      <th scope="col">2048</th>
+                      <th scope="col">4096</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Bartlett</th>
+                      <td>0.2253</td>
+                      <td>0.22535</td>
+                      <td>0.22538</td>
+                      <td>0.22539</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hann</th>
+                      <td>0.22903</td>
+                      <td>0.22911</td>
+                      <td>0.22915</td>
+                      <td>0.22917</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hanning</th>
+                      <td>0.22903</td>
+                      <td>0.22911</td>
+                      <td>0.22915</td>
+                      <td>0.22917</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Blackman</th>
+                      <td>0.13056</td>
+                      <td>0.13057</td>
+                      <td>0.13058</td>
+                      <td>0.13058</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Blackman-Harris</th>
+                      <td>0.08552</td>
+                      <td>0.08553</td>
+                      <td>0.08553</td>
+                      <td>0.08554</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hamming</th>
+                      <td>0.18505</td>
+                      <td>0.18575</td>
+                      <td>0.18611</td>
+                      <td>0.18628</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Bartlett-Hann</th>
+                      <td>0.21635</td>
+                      <td>0.21642</td>
+                      <td>0.21645</td>
+                      <td>0.21647</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Gaussian</th>
+                      <td>0.12024</td>
+                      <td>0.12074</td>
+                      <td>0.12099</td>
+                      <td>0.12112</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Kaiser-Bessel</th>
+                      <td>0.28214</td>
+                      <td>0.28270</td>
+                      <td>0.28298</td>
+                      <td>0.28312</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Nuttall</th>
+                      <td>0.08153</td>
+                      <td>0.08155</td>
+                      <td>0.08157</td>
+                      <td>0.08157</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Dolph-Chebychev</th>
+                      <td>0.08403</td>
+                      <td>0.08403</td>
+                      <td>0.08404</td>
+                      <td>0.08404</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Tukey</th>
+                      <td>0.50592</td>
+                      <td>0.50609</td>
+                      <td>0.50618</td>
+                      <td>0.50622</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </section>
+            </div>
+          </section>
 
-            <hr />
+          <p>
+            Below are the figures and the table with the final model parameters
+            for all 12 windows tested.
+          </p>
 
-            <section>
-              <h4>Final Line and Curve Fits</h4>
+          <section>
+            <h4>Maximizing the Line Fit</h4>
 
-              <div class="figbox">
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/bartlett_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Curve fit for the Bartlett window"
-                      title="Final model for the Bartlett window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Bartlett window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/hann_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Curve fit for the Hann window"
-                      title="Final model for the Hann window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/hanning_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Curve fit for the Hanning window"
-                      title="Final model for the Hanning window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Hanning window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/hamming_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Curve fit for the Hamming window"
-                      title="Final model for the Hamming window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Hamming window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/blackman_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Curve fit for the Blackman window"
-                      title="Final model for the Blackman window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Blackman window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/blackman_harris_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Curve fit for the Blackman-Harris window"
-                      title="Final model for the Blackman-Harris window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Blackman-Harris window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/bartlett_hann_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Curve fit for the Bartlett-Hann window"
-                      title="Final model for the Bartlett-Hann window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Bartlett-Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/gaussian_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Curve fit for the Gaussian window"
-                      title="Final model for the Gaussian window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Gaussian window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/kaiser_bessel_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Curve fit for the Kaiser-Bessel window"
-                      title="Final model for the Kaiser-Bessel window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Kaiser-Bessel window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/nuttall_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Curve fit for the Nuttall window"
-                      title="Final model for the Nuttall window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Nuttall window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/dolph_chebychev_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Curve fit for the Dolph-Chebychev window"
-                      title="Final model for the Dolph-Chebychev window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Dolph-Chebychev window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/linefit/tukey_linefit.png"
-                      width="526"
-                      height="289"
-                      alt="Resulting linefit for the Tukey window"
-                      title="Final model for the Tukey window."
-                    />
-                    <figcaption>
-                      Resulting curve fit for the Tukey window.
-                    </figcaption>
-                  </figure>
-                </div>
+            <div class="figbox">
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_bartlett.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Bartlett window"
+                    title="Maximixing the linearity of the Bartlett window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Bartlett window.
+                  </figcaption>
+                </figure>
               </div>
-            </section>
 
-            <hr />
-
-            <section>
-              <h4>Table with Final Model Parameters</h4>
-              <p>
-                The table below corresponds to Table 2 in Sec 3.1 of
-                <a
-                  href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
-                  target="_blank"
-                  >[Caetano & Depalle 2021]</a
-                >.
-              </p>
-
-              <div class="tablebox">
-                <div class="table">
-                  <table id="tab2">
-                    <caption>
-                      Table 2: Line fit parameters and coefficient of
-                      determination
-                      <var>R<sup>2</sup></var>
-                      for the twelve windows under investigation.
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th scope="col">Window</th>
-                        <th scope="col"><var>&kappa;</var></th>
-                        <th scope="col"><var>a</var></th>
-                        <th scope="col"><var>b</var></th>
-                        <th scope="col">
-                          <var>R<sup>2</sup></var>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">Bartlett</th>
-                        <td>0.2254</td>
-                        <td>-0.81377</td>
-                        <td>-0.37339</td>
-                        <td>0.99689</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hann</th>
-                        <td>0.22919</td>
-                        <td>-0.69315</td>
-                        <td>-1.0288</td>
-                        <td>1.00000</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hanning</th>
-                        <td>0.22919</td>
-                        <td>-0.69315</td>
-                        <td>-1.0288</td>
-                        <td>1.00000</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Blackman</th>
-                        <td>0.1306</td>
-                        <td>-0.29599</td>
-                        <td>-5.5907</td>
-                        <td>0.90000</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Blackman-Harris</th>
-                        <td>0.16554</td>
-                        <td>-7.4991&times;10<sup>-5</sup></td>
-                        <td>-0.72627</td>
-                        <td>0.90000</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hamming</th>
-                        <td>0.18645</td>
-                        <td>-0.70779</td>
-                        <td>1.481</td>
-                        <td>0.99993</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Bartlett-Hann</th>
-                        <td>0.21649</td>
-                        <td>-0.6291</td>
-                        <td>-1.6925</td>
-                        <td>0.99828</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Gaussian</th>
-                        <td>0.12125</td>
-                        <td>-0.67356</td>
-                        <td>1.2765</td>
-                        <td>0.99999</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Kaiser-Bessel</th>
-                        <td>0.28326</td>
-                        <td>-0.69315</td>
-                        <td>0.70529</td>
-                        <td>1.00000</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Nuttall</th>
-                        <td>0.081601</td>
-                        <td>-0.29599</td>
-                        <td>-4.4272</td>
-                        <td>0.90000</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Dolph-Chebychev</th>
-                        <td>0.085039</td>
-                        <td>-3.9824&times;10<sup>-3</sup></td>
-                        <td>-4.3969</td>
-                        <td>0.80000</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Tukey</th>
-                        <td>0.50626</td>
-                        <td>-0.7241</td>
-                        <td>-0.78342</td>
-                        <td>0.99972</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_hann.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Hann window"
+                    title="Maximixing the linearity of the Hann window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Hann window.
+                  </figcaption>
+                </figure>
               </div>
-            </section>
 
-            <hr />
-
-            <h4>How much Zero-Padding for ZP-Log-PI to Outperform Pow-PI</h4>
-
-            <section>
-              <h5>Maximum Amplitude Error</h5>
-
-              <div class="figbox">
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/bartlett_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Bartlett window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Bartlett window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Bartlett window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/hann_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Hann window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hann window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/hanning_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Hanning window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hanning window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Hanning window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/hamming_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Hamming window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hamming window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Hamming window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/blackman_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Blackman window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Blackman window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Blackman window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/blackman_harris_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Blackman-Harris window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Blackman-Harris window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Blackman-Harris window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/bartlett_hann_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Bartlett-Hann window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Bartlett-Hann window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Bartlett-Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/gaussian_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Gaussian window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Gaussian window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Gaussian window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/kaiser_bessel_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Kaiser-Bessel window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Kaiser-Bessel window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Kaiser-Bessel window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/nuttall_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Nuttall window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Nuttall window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Nuttall window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/dolph_chebychev_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Dolph-Chebychev window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Dolph-Chebychev window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Dolph-Chebychev window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/tukey_amp_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Amplitude estimation error as a function of the variable L for the Tukey window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Tukey window."
-                    />
-                    <figcaption>
-                      Maximum amplitude estimation error as a function of the
-                      zero-padding factor for the Tukey window.
-                    </figcaption>
-                  </figure>
-                </div>
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_hanning.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Hanning window"
+                    title="Maximixing the linearity of the Hanning window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Hanning window.
+                  </figcaption>
+                </figure>
               </div>
-            </section>
 
-            <section>
-              <h5>Maximum Frequency Error</h5>
-
-              <div class="figbox">
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/bartlett_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Bartlett window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Bartlett window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Bartlett window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/hann_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Hann window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hann window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/hanning_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Hanning window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hanning window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Hanning window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/hamming_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Hamming window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hamming window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Hamming window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/blackman_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Blackman window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Blackman window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Blackman window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/blackman_harris_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Blackman-Harris window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Blackman-Harris window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Blackman-Harris window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/bartlett_hann_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Bartlett-Hann window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Bartlett-Hann window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Bartlett-Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/gaussian_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Gaussian window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Gaussian window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Gaussian window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/kaiser_bessel_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Kaiser-Bessel window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Kaiser-Bessel window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Kaiser-Bessel window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/nuttall_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Nuttall window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Nuttall window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Nuttall window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/dolph_chebychev_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Dolph-Chebychev window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Dolph-Chebychev window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Dolph-Chebychev window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/zpadfac/tukey_bin_zpadfac.png"
-                      width="526"
-                      height="289"
-                      alt="Frequency bin estimation error as a function of the variable L for the Tukey window"
-                      title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Tukey window."
-                    />
-                    <figcaption>
-                      Maximum frequency bin estimation error as a function of
-                      the zero-padding factor for the Tukey window.
-                    </figcaption>
-                  </figure>
-                </div>
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_hamming.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Hamming window"
+                    title="Maximixing the linearity of the Hamming window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Hamming window.
+                  </figcaption>
+                </figure>
               </div>
-            </section>
 
-            <hr />
-
-            <section>
-              <h4>Table with Minimum Zero-Padding Factor</h4>
-              <p>
-                The table below corresponds to Table 3 in Sec. 4.1 of
-                <a
-                  href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
-                  target="_blank"
-                  >[Caetano & Depalle 2021]</a
-                >.
-              </p>
-              <div class="tablebox">
-                <div class="table">
-                  <table>
-                    <caption>
-                      Table 3: Minimum zero-padding factor
-                      <var>L</var>
-                      where
-                      <strong>ZP-Log-PI</strong>
-                      results in an estimation error lower than that of
-                      <strong>Pow-PI</strong
-                      >.
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th scope="col">Window</th>
-                        <th scope="col">
-                          min <var>L</var> for amplitude error &epsilon;<sub
-                            >a</sub
-                          >
-                        </th>
-                        <th scope="col">
-                          min <var>L</var> for frequency bin error &epsilon;<sub
-                            >&nu;</sub
-                          >
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">Bartlett</th>
-                        <td>2</td>
-                        <td>7</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hann</th>
-                        <td>2</td>
-                        <td>6</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hanning</th>
-                        <td>2</td>
-                        <td>6</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Blackman</th>
-                        <td>3</td>
-                        <td>13</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Blackman-Harris</th>
-                        <td>4</td>
-                        <td>> 16</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hamming</th>
-                        <td>2</td>
-                        <td>6</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Bartlett-Hann</th>
-                        <td>2</td>
-                        <td>6</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Gaussian</th>
-                        <td>3</td>
-                        <td>9</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Kaiser-Bessel</th>
-                        <td>1</td>
-                        <td>1</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Nuttall</th>
-                        <td>4</td>
-                        <td>> 16</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Dolph-Chebychev</th>
-                        <td>4</td>
-                        <td>> 16</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Tukey</th>
-                        <td>1</td>
-                        <td>1</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_blackman.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Blackman window"
+                    title="Maximixing the linearity of the Blackman window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Blackman window.
+                  </figcaption>
+                </figure>
               </div>
-            </section>
 
-            <hr />
-
-            <section>
-              <h4>
-                The Impact of Zero-Padding on Log-Scaled Parabolic Interpolation
-              </h4>
-
-              <div class="figbox">
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_bartlett_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Bartlett window"
-                      title="ZP-Log-PI for increasing L for the Bartlett window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Bartlett window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_hann_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Hann window"
-                      title="ZP-Log-PI for increasing L for the Hann window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_hanning_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Hanning window"
-                      title="ZP-Log-PI for increasing L for the Hanning window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Hanning window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_hamming_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Hamming window"
-                      title="ZP-Log-PI for increasing L for the Hamming window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Hamming window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_blackman_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Blackman window"
-                      title="ZP-Log-PI for increasing L for the Blackman window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Blackman window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_blackman_harris_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Blackman-Harris window"
-                      title="ZP-Log-PI for increasing L for the Blackman-Harris window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Blackman-Harris window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_bartlett_hann_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Bartlett-Hann window"
-                      title="ZP-Log-PI for increasing L for the Bartlett-Hann window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Bartlett-Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_gaussian_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Gaussian window"
-                      title="ZP-Log-PI for increasing L for the Gaussian window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Gaussian window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_kaiser_bessel_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Kaiser-Bessel window"
-                      title="ZP-Log-PI for increasing L for the Kaiser-Bessel window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Kaiser-Bessel window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_nuttall_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Nuttall window"
-                      title="ZP-Log-PI for increasing L for the Nuttall window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Nuttall window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_dolph_chebychev_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Dolph-Chebychev window"
-                      title="ZP-Log-PI for increasing L for the Dolph-Chebychev window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Dolph-Chebychev window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_tukey_log.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Tukey window"
-                      title="ZP-Log-PI for increasing L for the Tukey window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Tukey window.
-                    </figcaption>
-                  </figure>
-                </div>
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_blackman_harris.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Blackman-Harris window"
+                    title="Maximixing the linearity of the Blackman-Harris window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Blackman-Harris window.
+                  </figcaption>
+                </figure>
               </div>
-            </section>
 
-            <hr />
-
-            <section>
-              <h4>
-                The Impact of Zero-Padding on Power-Scaled Parabolic
-                Interpolation
-              </h4>
-
-              <div class="figbox">
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_bartlett_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Bartlett window"
-                      title="ZP-Pow-PI for increasing L for the Bartlett window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Bartlett window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_hann_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Hann window"
-                      title="ZP-Pow-PI for increasing L for the Hann window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_hanning_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Hanning window"
-                      title="ZP-Pow-PI for increasing L for the Hanning window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Hanning window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_hamming_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Hamming window"
-                      title="ZP-Pow-PI for increasing L for the Hamming window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Hamming window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_blackman_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Blackman window"
-                      title="ZP-Pow-PI for increasing L for the Blackman window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Blackman window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_blackman_harris_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Blackman-Harris window"
-                      title="ZP-Pow-PI for increasing L for the Blackman-Harris window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Blackman-Harris window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_bartlett_hann_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Bartlett-Hann window"
-                      title="ZP-Pow-PI for increasing L for the Bartlett-Hann window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Bartlett-Hann window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_gaussian_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Gaussian window"
-                      title="ZP-Pow-PI for increasing L for the Gaussian window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Gaussian window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_kaiser_bessel_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Kaiser-Bessel window"
-                      title="ZP-Pow-PI for increasing L for the Kaiser-Bessel window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Kaiser-Bessel window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_nuttall_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Nuttall window"
-                      title="ZP-Pow-PI for increasing L for the Nuttall window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Nuttall window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_dolph_chebychev_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Dolph-Chebychev window"
-                      title="ZP-Pow-PI for increasing L for the Dolph-Chebychev window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Dolph-Chebychev window.
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="fig">
-                  <figure>
-                    <img
-                      src="./2021dafx/img/wcerror/wcerror_tukey_pow.png"
-                      width="526"
-                      height="289"
-                      alt="Estimation error as a function of the variable L for the Tukey window"
-                      title="ZP-Pow-PI for increasing L for the Tukey window."
-                    />
-                    <figcaption>
-                      Maximum estimation error as a function of the zero-padding
-                      factor for the Tukey window.
-                    </figcaption>
-                  </figure>
-                </div>
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_bartlett_hann.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Bartlett-Hann window"
+                    title="Maximixing the linearity of the Bartlett-Hann window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Bartlett-Hann window.
+                  </figcaption>
+                </figure>
               </div>
-            </section>
 
-            <hr />
-
-            <section>
-              <h4>
-                Table with Maximum Amplitude and Frequency Bin Estimation Error
-                for Power Scaling
-              </h4>
-              <p>
-                The table below corresponds to Table 4 in Sec. 4.2 of
-                <a
-                  href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
-                  target="_blank"
-                  >[Caetano & Depalle 2021]</a
-                >.
-              </p>
-              <div class="tablebox">
-                <div class="table">
-                  <table>
-                    <caption>
-                      Table 4: Maximum amplitude and frequency estimation errors
-                      for power scaling parabolic interpolation when
-                      <var>N</var
-                      >=<var>M</var>=512.
-                    </caption>
-                    <thead>
-                      <tr>
-                        <th scope="col">Window</th>
-                        <th scope="col">Amplitude error</th>
-                        <th scope="col">Frequency error</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">Bartlett</th>
-                        <td>1.193&times;10<sup>-3</sup></td>
-                        <td>5.878&times;10<sup>-4</sup></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hann</th>
-                        <td>9.642&times;10<sup>-4</sup></td>
-                        <td>5.726&times;10<sup>-4</sup></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hanning</th>
-                        <td>9.642&times;10<sup>-4</sup></td>
-                        <td>5.726&times;10<sup>-4</sup></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Blackman</th>
-                        <td>6.691&times;10<sup>-5</sup></td>
-                        <td>8.194&times;10<sup>-5</sup></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Blackman-Harris</th>
-                        <td>1.092&times;10<sup>-5</sup></td>
-                        <td>1.941&times;10<sup>-5</sup></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Hamming</th>
-                        <td>1.177&times;10<sup>-3</sup></td>
-                        <td>4.099&times;10<sup>-4</sup></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Bartlett-Hann</th>
-                        <td>9.588&times;10<sup>-4</sup></td>
-                        <td>5.377&times;10<sup>-4</sup></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Gaussian</th>
-                        <td>2.198&times;10<sup>-4</sup></td>
-                        <td>1.599&times;10<sup>-4</sup></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Kaiser-Bessel</th>
-                        <td>2.207&times;10<sup>-1</sup></td>
-                        <td>1.753&times;10<sup>-1</sup></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Nuttall</th>
-                        <td>1.202&times;10<sup>-5</sup></td>
-                        <td>1.803&times;10<sup>-5</sup></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Dolph-Chebychev</th>
-                        <td>1.689&times;10<sup>-5</sup></td>
-                        <td>1.823&times;10<sup>-5</sup></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Tukey</th>
-                        <td>7.782&times;10<sup>-2</sup></td>
-                        <td>2.130&times;10<sup>-2</sup></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_gaussian.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Gaussian window"
+                    title="Maximixing the linearity of the Gaussian window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Gaussian window.
+                  </figcaption>
+                </figure>
               </div>
-            </section>
-          </article>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_kaiser_bessel.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Kaiser-Bessel window"
+                    title="Maximixing the linearity of the Kaiser-Bessel window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Kaiser-Bessel window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_nuttall.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Nuttall window"
+                    title="Maximixing the linearity of the Nuttall window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Nuttall window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_dolph_chebychev.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Dolph-Chebychev window"
+                    title="Maximixing the linearity of the Dolph-Chebychev window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Dolph-Chebychev window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/kappa/kappa_tukey.png"
+                    width="526"
+                    height="289"
+                    alt="Coefficient of determination as a function of the variable kappa for the Tukey window"
+                    title="Maximixing the linearity of the Tukey window."
+                  />
+                  <figcaption>
+                    Coefficient of determination as a function of the variable
+                    kappa for the Tukey window.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
 
           <hr />
 
-          <article>
-            <h3>Sound Examples</h3>
+          <section>
+            <h4>Final Line and Curve Fits</h4>
 
+            <div class="figbox">
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/bartlett_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Curve fit for the Bartlett window"
+                    title="Final model for the Bartlett window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Bartlett window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/hann_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Curve fit for the Hann window"
+                    title="Final model for the Hann window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Hann window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/hanning_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Curve fit for the Hanning window"
+                    title="Final model for the Hanning window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Hanning window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/hamming_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Curve fit for the Hamming window"
+                    title="Final model for the Hamming window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Hamming window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/blackman_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Curve fit for the Blackman window"
+                    title="Final model for the Blackman window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Blackman window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/blackman_harris_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Curve fit for the Blackman-Harris window"
+                    title="Final model for the Blackman-Harris window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Blackman-Harris window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/bartlett_hann_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Curve fit for the Bartlett-Hann window"
+                    title="Final model for the Bartlett-Hann window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Bartlett-Hann window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/gaussian_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Curve fit for the Gaussian window"
+                    title="Final model for the Gaussian window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Gaussian window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/kaiser_bessel_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Curve fit for the Kaiser-Bessel window"
+                    title="Final model for the Kaiser-Bessel window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Kaiser-Bessel window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/nuttall_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Curve fit for the Nuttall window"
+                    title="Final model for the Nuttall window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Nuttall window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/dolph_chebychev_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Curve fit for the Dolph-Chebychev window"
+                    title="Final model for the Dolph-Chebychev window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Dolph-Chebychev window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/linefit/tukey_linefit.png"
+                    width="526"
+                    height="289"
+                    alt="Resulting linefit for the Tukey window"
+                    title="Final model for the Tukey window."
+                  />
+                  <figcaption>
+                    Resulting curve fit for the Tukey window.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <section>
+            <h4>Table with Final Model Parameters</h4>
             <p>
-              Below are a few sound examples comparing both scalings used in the
-              article. The figures show the spectrogram of each sound. The
-              <abbr>SRER</abbr> is given by
-              <math>
-                <mrow>
-                  <mi>SRER</mi>
-                  <mo>&#x225D;</mo>
-                  <mn>20</mn>
-                  <mo>&#x2062;<!--INVISIBLE TIMES--></mo>
-                  <mo>&#x2061;<!--FUNCTION APPLICATION--></mo>
-                  <msub><mi>log</mi><mn>10</mn></msub>
-                  <mfrac>
-                    <mrow>
-                      <mi>RMS</mi>
-                      <mo>&#x2061;<!--FUNCTION APPLICATION--></mo>
-                      <mo> [ </mo><mi>x</mi><mo> ( </mo><mi>n</mi><mo> ) </mo
-                      ><mo> ] </mo>
-                    </mrow>
-                    <mrow>
-                      <mn>RMS</mn>
-                      <mo>&#x2061;<!--FUNCTION APPLICATION--></mo>
-                      <mo>[</mo>
-                      <mi>&#x3B5;</mi>
-                      <mo>(</mo>
-                      <mi>n</mi>
-                      <mo>)</mo>
-                      <mo>]</mo>
-                    </mrow>
-                  </mfrac>
-                </mrow> </math
-              >, where
-              <math
-                ><mrow><mi>x</mi><mo> ( </mo><mi>n</mi><mo> ) </mo></mrow></math
-              >
-              represents the waveform of the original sound and
-              <math
-                ><mrow
-                  ><mi>&#x3B5;</mi><mo> ( </mo><mi>n</mi><mo> ) </mo></mrow
-                ></math
-              >
-              represents the waveform of the residual, defined as
-              <math
-                ><mrow><mi>&#x3B5;</mi><mo> ( </mo><mi>n</mi><mo> ) </mo></mrow
-                ><mo>&#x225D;</mo
-                ><mrow>
-                  <mi>x</mi><mo> ( </mo><mi>n</mi><mo> ) </mo><mo>-</mo
-                  ><mi>s</mi><mo> ( </mo><mi>n</mi><mo> ) </mo>
-                </mrow></math
-              >, where
-              <math
-                ><mrow><mi>s</mi><mo> ( </mo><mi>n</mi><mo> ) </mo></mrow></math
-              >
-              is the waveform of the sinusoidal model. Download a
+              The table below corresponds to Table 2 in Sec 3.1 of
               <a
-                href="./2021dafx/Caetano&Depalle-DAFx2021.zip"
-                download="Caetano&Depalle-DAFx2021.zip"
-                >zip file</a
-              >
-              with the audio and figures below.
+                href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
+                target="_blank"
+                >[Caetano & Depalle 2021]</a
+              >.
             </p>
 
-            <section>
-              <h4>Singing Voice and Musical Instruments</h4>
+            <div class="tablebox">
+              <div class="table">
+                <table id="tab2">
+                  <caption>
+                    Table 2: Line fit parameters and coefficient of
+                    determination
+                    <var>R<sup>2</sup></var>
+                    for the twelve windows under investigation.
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Window</th>
+                      <th scope="col"><var>&kappa;</var></th>
+                      <th scope="col"><var>a</var></th>
+                      <th scope="col"><var>b</var></th>
+                      <th scope="col">
+                        <var>R<sup>2</sup></var>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Bartlett</th>
+                      <td>0.2254</td>
+                      <td>-0.81377</td>
+                      <td>-0.37339</td>
+                      <td>0.99689</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hann</th>
+                      <td>0.22919</td>
+                      <td>-0.69315</td>
+                      <td>-1.0288</td>
+                      <td>1.00000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hanning</th>
+                      <td>0.22919</td>
+                      <td>-0.69315</td>
+                      <td>-1.0288</td>
+                      <td>1.00000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Blackman</th>
+                      <td>0.1306</td>
+                      <td>-0.29599</td>
+                      <td>-5.5907</td>
+                      <td>0.90000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Blackman-Harris</th>
+                      <td>0.16554</td>
+                      <td>-7.4991&times;10<sup>-5</sup></td>
+                      <td>-0.72627</td>
+                      <td>0.90000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hamming</th>
+                      <td>0.18645</td>
+                      <td>-0.70779</td>
+                      <td>1.481</td>
+                      <td>0.99993</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Bartlett-Hann</th>
+                      <td>0.21649</td>
+                      <td>-0.6291</td>
+                      <td>-1.6925</td>
+                      <td>0.99828</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Gaussian</th>
+                      <td>0.12125</td>
+                      <td>-0.67356</td>
+                      <td>1.2765</td>
+                      <td>0.99999</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Kaiser-Bessel</th>
+                      <td>0.28326</td>
+                      <td>-0.69315</td>
+                      <td>0.70529</td>
+                      <td>1.00000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Nuttall</th>
+                      <td>0.081601</td>
+                      <td>-0.29599</td>
+                      <td>-4.4272</td>
+                      <td>0.90000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Dolph-Chebychev</th>
+                      <td>0.085039</td>
+                      <td>-3.9824&times;10<sup>-3</sup></td>
+                      <td>-4.3969</td>
+                      <td>0.80000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Tukey</th>
+                      <td>0.50626</td>
+                      <td>-0.7241</td>
+                      <td>-0.78342</td>
+                      <td>0.99972</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
 
-              <div class="figbox">
-                <div class="snd">
-                  <p class="label">Log Scaling</p>
-                  <figure>
-                    <img
-                      src="./2021dafx/img/sndex/singing/singing_male_western_log_wav.png"
-                      width="526"
-                      height="289"
-                      alt="Waveform of a Western Male Singer"
-                      title="Waveform of a Western Male Singer."
+          <hr />
+
+          <h4>How much Zero-Padding for ZP-Log-PI to Outperform Pow-PI</h4>
+
+          <section>
+            <h5>Maximum Amplitude Error</h5>
+
+            <div class="figbox">
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/bartlett_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Bartlett window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Bartlett window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Bartlett window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/hann_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Hann window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hann window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Hann window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/hanning_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Hanning window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hanning window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Hanning window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/hamming_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Hamming window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hamming window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Hamming window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/blackman_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Blackman window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Blackman window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Blackman window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/blackman_harris_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Blackman-Harris window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Blackman-Harris window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Blackman-Harris window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/bartlett_hann_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Bartlett-Hann window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Bartlett-Hann window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Bartlett-Hann window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/gaussian_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Gaussian window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Gaussian window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Gaussian window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/kaiser_bessel_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Kaiser-Bessel window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Kaiser-Bessel window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Kaiser-Bessel window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/nuttall_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Nuttall window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Nuttall window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Nuttall window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/dolph_chebychev_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Dolph-Chebychev window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Dolph-Chebychev window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Dolph-Chebychev window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/tukey_amp_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Amplitude estimation error as a function of the variable L for the Tukey window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Tukey window."
+                  />
+                  <figcaption>
+                    Maximum amplitude estimation error as a function of the
+                    zero-padding factor for the Tukey window.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h5>Maximum Frequency Error</h5>
+
+            <div class="figbox">
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/bartlett_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Bartlett window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Bartlett window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Bartlett window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/hann_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Hann window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hann window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Hann window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/hanning_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Hanning window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hanning window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Hanning window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/hamming_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Hamming window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Hamming window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Hamming window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/blackman_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Blackman window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Blackman window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Blackman window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/blackman_harris_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Blackman-Harris window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Blackman-Harris window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Blackman-Harris window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/bartlett_hann_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Bartlett-Hann window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Bartlett-Hann window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Bartlett-Hann window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/gaussian_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Gaussian window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Gaussian window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Gaussian window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/kaiser_bessel_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Kaiser-Bessel window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Kaiser-Bessel window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Kaiser-Bessel window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/nuttall_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Nuttall window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Nuttall window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Nuttall window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/dolph_chebychev_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Dolph-Chebychev window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Dolph-Chebychev window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Dolph-Chebychev window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/zpadfac/tukey_bin_zpadfac.png"
+                    width="526"
+                    height="289"
+                    alt="Frequency bin estimation error as a function of the variable L for the Tukey window"
+                    title="Minimum zero-padding factor where ZP-Log-PI results in estimation error below that of Pow-PI for the Tukey window."
+                  />
+                  <figcaption>
+                    Maximum frequency bin estimation error as a function of the
+                    zero-padding factor for the Tukey window.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <section>
+            <h4>Table with Minimum Zero-Padding Factor</h4>
+            <p>
+              The table below corresponds to Table 3 in Sec. 4.1 of
+              <a
+                href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
+                target="_blank"
+                >[Caetano & Depalle 2021]</a
+              >.
+            </p>
+            <div class="tablebox">
+              <div class="table">
+                <table>
+                  <caption>
+                    Table 3: Minimum zero-padding factor
+                    <var>L</var>
+                    where
+                    <strong>ZP-Log-PI</strong>
+                    results in an estimation error lower than that of
+                    <strong>Pow-PI</strong
+                    >.
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Window</th>
+                      <th scope="col">
+                        min <var>L</var> for amplitude error &epsilon;<sub
+                          >a</sub
+                        >
+                      </th>
+                      <th scope="col">
+                        min <var>L</var> for frequency bin error &epsilon;<sub
+                          >&nu;</sub
+                        >
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Bartlett</th>
+                      <td>2</td>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hann</th>
+                      <td>2</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hanning</th>
+                      <td>2</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Blackman</th>
+                      <td>3</td>
+                      <td>13</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Blackman-Harris</th>
+                      <td>4</td>
+                      <td>> 16</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hamming</th>
+                      <td>2</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Bartlett-Hann</th>
+                      <td>2</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Gaussian</th>
+                      <td>3</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Kaiser-Bessel</th>
+                      <td>1</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Nuttall</th>
+                      <td>4</td>
+                      <td>> 16</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Dolph-Chebychev</th>
+                      <td>4</td>
+                      <td>> 16</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Tukey</th>
+                      <td>1</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <section>
+            <h4>
+              The Impact of Zero-Padding on Log-Scaled Parabolic Interpolation
+            </h4>
+
+            <div class="figbox">
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_bartlett_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Bartlett window"
+                    title="ZP-Log-PI for increasing L for the Bartlett window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Bartlett window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_hann_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Hann window"
+                    title="ZP-Log-PI for increasing L for the Hann window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Hann window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_hanning_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Hanning window"
+                    title="ZP-Log-PI for increasing L for the Hanning window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Hanning window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_hamming_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Hamming window"
+                    title="ZP-Log-PI for increasing L for the Hamming window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Hamming window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_blackman_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Blackman window"
+                    title="ZP-Log-PI for increasing L for the Blackman window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Blackman window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_blackman_harris_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Blackman-Harris window"
+                    title="ZP-Log-PI for increasing L for the Blackman-Harris window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Blackman-Harris window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_bartlett_hann_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Bartlett-Hann window"
+                    title="ZP-Log-PI for increasing L for the Bartlett-Hann window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Bartlett-Hann window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_gaussian_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Gaussian window"
+                    title="ZP-Log-PI for increasing L for the Gaussian window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Gaussian window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_kaiser_bessel_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Kaiser-Bessel window"
+                    title="ZP-Log-PI for increasing L for the Kaiser-Bessel window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Kaiser-Bessel window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_nuttall_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Nuttall window"
+                    title="ZP-Log-PI for increasing L for the Nuttall window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Nuttall window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_dolph_chebychev_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Dolph-Chebychev window"
+                    title="ZP-Log-PI for increasing L for the Dolph-Chebychev window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Dolph-Chebychev window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_tukey_log.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Tukey window"
+                    title="ZP-Log-PI for increasing L for the Tukey window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Tukey window.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <section>
+            <h4>
+              The Impact of Zero-Padding on Power-Scaled Parabolic Interpolation
+            </h4>
+
+            <div class="figbox">
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_bartlett_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Bartlett window"
+                    title="ZP-Pow-PI for increasing L for the Bartlett window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Bartlett window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_hann_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Hann window"
+                    title="ZP-Pow-PI for increasing L for the Hann window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Hann window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_hanning_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Hanning window"
+                    title="ZP-Pow-PI for increasing L for the Hanning window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Hanning window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_hamming_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Hamming window"
+                    title="ZP-Pow-PI for increasing L for the Hamming window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Hamming window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_blackman_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Blackman window"
+                    title="ZP-Pow-PI for increasing L for the Blackman window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Blackman window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_blackman_harris_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Blackman-Harris window"
+                    title="ZP-Pow-PI for increasing L for the Blackman-Harris window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Blackman-Harris window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_bartlett_hann_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Bartlett-Hann window"
+                    title="ZP-Pow-PI for increasing L for the Bartlett-Hann window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Bartlett-Hann window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_gaussian_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Gaussian window"
+                    title="ZP-Pow-PI for increasing L for the Gaussian window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Gaussian window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_kaiser_bessel_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Kaiser-Bessel window"
+                    title="ZP-Pow-PI for increasing L for the Kaiser-Bessel window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Kaiser-Bessel window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_nuttall_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Nuttall window"
+                    title="ZP-Pow-PI for increasing L for the Nuttall window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Nuttall window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_dolph_chebychev_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Dolph-Chebychev window"
+                    title="ZP-Pow-PI for increasing L for the Dolph-Chebychev window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Dolph-Chebychev window.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="fig">
+                <figure>
+                  <img
+                    src="./2021dafx/img/wcerror/wcerror_tukey_pow.png"
+                    width="526"
+                    height="289"
+                    alt="Estimation error as a function of the variable L for the Tukey window"
+                    title="ZP-Pow-PI for increasing L for the Tukey window."
+                  />
+                  <figcaption>
+                    Maximum estimation error as a function of the zero-padding
+                    factor for the Tukey window.
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <hr />
+
+          <section>
+            <h4>
+              Table with Maximum Amplitude and Frequency Bin Estimation Error
+              for Power Scaling
+            </h4>
+            <p>
+              The table below corresponds to Table 4 in Sec. 4.2 of
+              <a
+                href="https://dafx2020.mdw.ac.at/proceedings/papers/DAFx20in21_paper_50.pdf"
+                target="_blank"
+                >[Caetano & Depalle 2021]</a
+              >.
+            </p>
+            <div class="tablebox">
+              <div class="table">
+                <table>
+                  <caption>
+                    Table 4: Maximum amplitude and frequency estimation errors
+                    for power scaling parabolic interpolation when
+                    <var>N</var
+                    >=<var>M</var>=512.
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Window</th>
+                      <th scope="col">Amplitude error</th>
+                      <th scope="col">Frequency error</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Bartlett</th>
+                      <td>1.193&times;10<sup>-3</sup></td>
+                      <td>5.878&times;10<sup>-4</sup></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hann</th>
+                      <td>9.642&times;10<sup>-4</sup></td>
+                      <td>5.726&times;10<sup>-4</sup></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hanning</th>
+                      <td>9.642&times;10<sup>-4</sup></td>
+                      <td>5.726&times;10<sup>-4</sup></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Blackman</th>
+                      <td>6.691&times;10<sup>-5</sup></td>
+                      <td>8.194&times;10<sup>-5</sup></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Blackman-Harris</th>
+                      <td>1.092&times;10<sup>-5</sup></td>
+                      <td>1.941&times;10<sup>-5</sup></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Hamming</th>
+                      <td>1.177&times;10<sup>-3</sup></td>
+                      <td>4.099&times;10<sup>-4</sup></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Bartlett-Hann</th>
+                      <td>9.588&times;10<sup>-4</sup></td>
+                      <td>5.377&times;10<sup>-4</sup></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Gaussian</th>
+                      <td>2.198&times;10<sup>-4</sup></td>
+                      <td>1.599&times;10<sup>-4</sup></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Kaiser-Bessel</th>
+                      <td>2.207&times;10<sup>-1</sup></td>
+                      <td>1.753&times;10<sup>-1</sup></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Nuttall</th>
+                      <td>1.202&times;10<sup>-5</sup></td>
+                      <td>1.803&times;10<sup>-5</sup></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Dolph-Chebychev</th>
+                      <td>1.689&times;10<sup>-5</sup></td>
+                      <td>1.823&times;10<sup>-5</sup></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Tukey</th>
+                      <td>7.782&times;10<sup>-2</sup></td>
+                      <td>2.130&times;10<sup>-2</sup></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <hr />
+
+        <article>
+          <h3>Sound Examples</h3>
+
+          <p>
+            Below are a few sound examples comparing both scalings used in the
+            article. The figures show the spectrogram of each sound. The
+            <abbr>SRER</abbr> is given by
+            <math>
+              <mrow>
+                <mi>SRER</mi>
+                <mo>&#x225D;</mo>
+                <mn>20</mn>
+                <mo>&#x2062;<!--INVISIBLE TIMES--></mo>
+                <mo>&#x2061;<!--FUNCTION APPLICATION--></mo>
+                <msub><mi>log</mi><mn>10</mn></msub>
+                <mfrac>
+                  <mrow>
+                    <mi>RMS</mi>
+                    <mo>&#x2061;<!--FUNCTION APPLICATION--></mo>
+                    <mo> [ </mo><mi>x</mi><mo> ( </mo><mi>n</mi><mo> ) </mo
+                    ><mo> ] </mo>
+                  </mrow>
+                  <mrow>
+                    <mn>RMS</mn>
+                    <mo>&#x2061;<!--FUNCTION APPLICATION--></mo>
+                    <mo>[</mo>
+                    <mi>&#x3B5;</mi>
+                    <mo>(</mo>
+                    <mi>n</mi>
+                    <mo>)</mo>
+                    <mo>]</mo>
+                  </mrow>
+                </mfrac>
+              </mrow> </math
+            >, where
+            <math
+              ><mrow><mi>x</mi><mo> ( </mo><mi>n</mi><mo> ) </mo></mrow></math
+            >
+            represents the waveform of the original sound and
+            <math
+              ><mrow
+                ><mi>&#x3B5;</mi><mo> ( </mo><mi>n</mi><mo> ) </mo></mrow
+              ></math
+            >
+            represents the waveform of the residual, defined as
+            <math
+              ><mrow><mi>&#x3B5;</mi><mo> ( </mo><mi>n</mi><mo> ) </mo></mrow
+              ><mo>&#x225D;</mo
+              ><mrow>
+                <mi>x</mi><mo> ( </mo><mi>n</mi><mo> ) </mo><mo>-</mo><mi>s</mi
+                ><mo> ( </mo><mi>n</mi><mo> ) </mo>
+              </mrow></math
+            >, where
+            <math
+              ><mrow><mi>s</mi><mo> ( </mo><mi>n</mi><mo> ) </mo></mrow></math
+            >
+            is the waveform of the sinusoidal model. Download a
+            <a
+              href="./2021dafx/Caetano&Depalle-DAFx2021.zip"
+              download="Caetano&Depalle-DAFx2021.zip"
+              >zip file</a
+            >
+            with the audio and figures below.
+          </p>
+
+          <section>
+            <h4>Singing Voice and Musical Instruments</h4>
+
+            <div class="figbox">
+              <div class="snd">
+                <p class="label">Log Scaling</p>
+                <figure>
+                  <img
+                    src="./2021dafx/img/sndex/singing/singing_male_western_log_wav.png"
+                    width="526"
+                    height="289"
+                    alt="Waveform of a Western Male Singer"
+                    title="Waveform of a Western Male Singer."
+                  />
+                </figure>
+                <div class="play">
+                  <p class="label">Original</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/singing/singing_male_western.wav"
+                      type="audio/wav"
                     />
-                  </figure>
-                  <div class="play">
-                    <p class="label">Original</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/singing/singing_male_western.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/singing/singing_male_western.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Sinusoidal component</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/singing/singing_male_western_log_sin.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/singing/singing_male_western_log_sin.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Residual component.</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/singing/singing_male_western_log_res.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/singing/singing_male_western_log_res.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">
-                      Residual component normalized to -16dB RMS
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/singing/singing_male_western.wav"
+                        >link to the audio</a
+                      >
+                      instead.
                     </p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/singing/singing_male_western_log_res_norm.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/singing/singing_male_western_log_res_norm.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
+                  </audio>
                 </div>
-
-                <div class="snd">
-                  <p class="label">Power Scaling</p>
-                  <figure>
-                    <img
-                      src="./2021dafx/img/sndex/singing/singing_male_western_pow_wav.png"
-                      width="526"
-                      height="289"
-                      alt="Waveform of a Western Male Singer"
-                      title="Waveform of a Western Male Singer."
+                <div class="play">
+                  <p class="label">Sinusoidal component</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/singing/singing_male_western_log_sin.wav"
+                      type="audio/wav"
                     />
-                  </figure>
-                  <div class="play">
-                    <p class="label">Original</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/singing/singing_male_western.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/singing/singing_male_western.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Sinusoidal component</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/singing/singing_male_western_pow_sin.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/singing/singing_male_western_pow_sin.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Residual component</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/singing/singing_male_western_pow_res.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/singing/singing_male_western_pow_res.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">
-                      Residual component normalized to -16dB RMS
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/singing/singing_male_western_log_sin.wav"
+                        >link to the audio</a
+                      >
+                      instead.
                     </p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/singing/singing_male_western_pow_res_norm.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/singing/singing_male_western_pow_res_norm.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
+                  </audio>
                 </div>
-
-                <div class="snd">
-                  <p class="label">Log Scaling</p>
-                  <figure>
-                    <img
-                      src="./2021dafx/img/sndex/violin/violin_ord_A4_ff_log_wav.png"
-                      width="526"
-                      height="289"
-                      alt="Waveform of an A4 note played fortissimo on a Violin"
-                      title="Violin Ordinario Vibrato Fortisimo."
+                <div class="play">
+                  <p class="label">Residual component.</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/singing/singing_male_western_log_res.wav"
+                      type="audio/wav"
                     />
-                  </figure>
-                  <div class="play">
-                    <p class="label">Original</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/violin/violin_ord_A4_ff.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a href="./2021dafx/audio/violin/violin_ord_A4_ff.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Sinusoidal component</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/violin/violin_ord_A4_ff_log_sin.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/violin/violin_ord_A4_ff_log_sin.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Residual component</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/violin/violin_ord_A4_ff_log_res.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/violin/violin_ord_A4_ff_log_res.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">
-                      Residual component normalized to -16dB RMS
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/singing/singing_male_western_log_res.wav"
+                        >link to the audio</a
+                      >
+                      instead.
                     </p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/violin/violin_ord_A4_ff_log_res_norm.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/violin/violin_ord_A4_ff_log_res_norm.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
+                  </audio>
                 </div>
-
-                <div class="snd">
-                  <p class="label">Power Scaling</p>
-                  <figure>
-                    <img
-                      src="./2021dafx/img/sndex/violin/violin_ord_A4_ff_pow_wav.png"
-                      width="526"
-                      height="289"
-                      alt="Waveform of an A4 note played fortissimo on a Violin"
-                      title="Violin Ordinario Vibrato Fortisimo."
+                <div class="play">
+                  <p class="label">
+                    Residual component normalized to -16dB RMS
+                  </p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/singing/singing_male_western_log_res_norm.wav"
+                      type="audio/wav"
                     />
-                  </figure>
-                  <div class="play">
-                    <p class="label">Original</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/violin/violin_ord_A4_ff.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a href="./2021dafx/audio/violin/violin_ord_A4_ff.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Sinusoidal component</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/violin/violin_ord_A4_ff_pow_sin.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/violin/violin_ord_A4_ff_pow_sin.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Residual component</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">
-                      Residual component normalized to -16dB RMS
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/singing/singing_male_western_log_res_norm.wav"
+                        >link to the audio</a
+                      >
+                      instead.
                     </p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res_norm.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res_norm.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                </div>
-
-                <div class="snd">
-                  <p class="label">Log Scaling</p>
-                  <figure>
-                    <img
-                      src="./2021dafx/img/sndex/arpeggio/f1_arpeggios_breathy_a_log_wav.png"
-                      width="526"
-                      height="289"
-                      alt="Waveform of a Female Singer performing a breathy arpeggio"
-                      title="Female Singer Breathy Arpeggio."
-                    />
-                  </figure>
-                  <div class="play">
-                    <p class="label">Original</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Sinusoidal component</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_sin.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_sin.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Residual component.</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_res.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_res.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">
-                      Residual component normalized to -16dB RMS
-                    </p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_res_norm.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_res_norm.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                </div>
-
-                <div class="snd">
-                  <p class="label">Power Scaling</p>
-                  <figure>
-                    <img
-                      src="./2021dafx/img/sndex/arpeggio/f1_arpeggios_breathy_a_pow_wav.png"
-                      width="526"
-                      height="289"
-                      alt="Waveform of a Western Male Singer"
-                      title="Waveform of a Western Male Singer."
-                    />
-                  </figure>
-                  <div class="play">
-                    <p class="label">Original</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Sinusoidal component</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_sin.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_sin.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">Residual component</p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_res.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_res.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
-                  <div class="play">
-                    <p class="label">
-                      Residual component normalized to -16dB RMS
-                    </p>
-                    <audio controls>
-                      <source
-                        src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_res_norm.wav"
-                        type="audio/wav"
-                      />
-                      <p>
-                        Your browser doesn't support HTML5 audio. Here is a
-                        <a
-                          href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_res_norm.wav"
-                          >link to the audio</a
-                        >
-                        instead.
-                      </p>
-                    </audio>
-                  </div>
+                  </audio>
                 </div>
               </div>
-            </section>
-            <section>
-              <h4>Reference</h4>
-              <p>
-                <em
-                  ><strong>[Werner & Germain 2016]</strong> K.J. Werner & F.G.
-                  Germain "Sinusoidal Parameter Estimation Using Quadratic
-                  Interpolation around Power-Scaled Magnitude Spectrum Peaks"
-                  Applied Sciences. 2016; 6(10):306.
-                  <a href="https://doi.org/10.3390/app6100306" target="_blank"
-                    >DOI:app6100306</a
-                  ></em
-                >
-              </p>
-            </section>
-          </article>
-        </main>
-        <footer id="footer"></footer>
-      </div>
-      <script>
-        genMenu();
-      </script>
-      <script>
-        genFooter();
-      </script>
-    </body>
-  </html>
+
+              <div class="snd">
+                <p class="label">Power Scaling</p>
+                <figure>
+                  <img
+                    src="./2021dafx/img/sndex/singing/singing_male_western_pow_wav.png"
+                    width="526"
+                    height="289"
+                    alt="Waveform of a Western Male Singer"
+                    title="Waveform of a Western Male Singer."
+                  />
+                </figure>
+                <div class="play">
+                  <p class="label">Original</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/singing/singing_male_western.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/singing/singing_male_western.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">Sinusoidal component</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/singing/singing_male_western_pow_sin.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/singing/singing_male_western_pow_sin.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">Residual component</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/singing/singing_male_western_pow_res.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/singing/singing_male_western_pow_res.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">
+                    Residual component normalized to -16dB RMS
+                  </p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/singing/singing_male_western_pow_res_norm.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/singing/singing_male_western_pow_res_norm.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+              </div>
+
+              <div class="snd">
+                <p class="label">Log Scaling</p>
+                <figure>
+                  <img
+                    src="./2021dafx/img/sndex/violin/violin_ord_A4_ff_log_wav.png"
+                    width="526"
+                    height="289"
+                    alt="Waveform of an A4 note played fortissimo on a Violin"
+                    title="Violin Ordinario Vibrato Fortisimo."
+                  />
+                </figure>
+                <div class="play">
+                  <p class="label">Original</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/violin/violin_ord_A4_ff.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a href="./2021dafx/audio/violin/violin_ord_A4_ff.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">Sinusoidal component</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/violin/violin_ord_A4_ff_log_sin.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/violin/violin_ord_A4_ff_log_sin.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">Residual component</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/violin/violin_ord_A4_ff_log_res.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/violin/violin_ord_A4_ff_log_res.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">
+                    Residual component normalized to -16dB RMS
+                  </p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/violin/violin_ord_A4_ff_log_res_norm.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/violin/violin_ord_A4_ff_log_res_norm.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+              </div>
+
+              <div class="snd">
+                <p class="label">Power Scaling</p>
+                <figure>
+                  <img
+                    src="./2021dafx/img/sndex/violin/violin_ord_A4_ff_pow_wav.png"
+                    width="526"
+                    height="289"
+                    alt="Waveform of an A4 note played fortissimo on a Violin"
+                    title="Violin Ordinario Vibrato Fortisimo."
+                  />
+                </figure>
+                <div class="play">
+                  <p class="label">Original</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/violin/violin_ord_A4_ff.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a href="./2021dafx/audio/violin/violin_ord_A4_ff.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">Sinusoidal component</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/violin/violin_ord_A4_ff_pow_sin.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/violin/violin_ord_A4_ff_pow_sin.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">Residual component</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">
+                    Residual component normalized to -16dB RMS
+                  </p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res_norm.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/violin/violin_ord_A4_ff_pow_res_norm.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+              </div>
+
+              <div class="snd">
+                <p class="label">Log Scaling</p>
+                <figure>
+                  <img
+                    src="./2021dafx/img/sndex/arpeggio/f1_arpeggios_breathy_a_log_wav.png"
+                    width="526"
+                    height="289"
+                    alt="Waveform of a Female Singer performing a breathy arpeggio"
+                    title="Female Singer Breathy Arpeggio."
+                  />
+                </figure>
+                <div class="play">
+                  <p class="label">Original</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">Sinusoidal component</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_sin.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_sin.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">Residual component.</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_res.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_res.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">
+                    Residual component normalized to -16dB RMS
+                  </p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_res_norm.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_log_res_norm.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+              </div>
+
+              <div class="snd">
+                <p class="label">Power Scaling</p>
+                <figure>
+                  <img
+                    src="./2021dafx/img/sndex/arpeggio/f1_arpeggios_breathy_a_pow_wav.png"
+                    width="526"
+                    height="289"
+                    alt="Waveform of a Western Male Singer"
+                    title="Waveform of a Western Male Singer."
+                  />
+                </figure>
+                <div class="play">
+                  <p class="label">Original</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">Sinusoidal component</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_sin.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_sin.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">Residual component</p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_res.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_res.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+                <div class="play">
+                  <p class="label">
+                    Residual component normalized to -16dB RMS
+                  </p>
+                  <audio controls>
+                    <source
+                      src="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_res_norm.wav"
+                      type="audio/wav"
+                    />
+                    <p>
+                      Your browser doesn't support HTML5 audio. Here is a
+                      <a
+                        href="./2021dafx/audio/arpeggio/f1_arpeggios_breathy_a_pow_res_norm.wav"
+                        >link to the audio</a
+                      >
+                      instead.
+                    </p>
+                  </audio>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h4>Reference</h4>
+            <p>
+              <em
+                ><strong>[Werner & Germain 2016]</strong> K.J. Werner & F.G.
+                Germain "Sinusoidal Parameter Estimation Using Quadratic
+                Interpolation around Power-Scaled Magnitude Spectrum Peaks"
+                Applied Sciences. 2016; 6(10):306.
+                <a href="https://doi.org/10.3390/app6100306" target="_blank"
+                  >DOI:app6100306</a
+                ></em
+              >
+            </p>
+          </section>
+        </article>
+      </main>
+      <footer id="footer"></footer>
+    </div>
+    <script>
+      genMenu();
+    </script>
+    <script>
+      genFooter();
+    </script>
+  </body>
 </html>
