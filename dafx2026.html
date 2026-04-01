@@ -1,7 +1,8 @@
 <!doctype html>
-<html lang="us">
+<html lang="en-US">
   <head>
     <title>Sound Examples</title>
+
     <meta content="text/html" http-equiv="content-type" />
     <meta charset="utf-8" />
 
@@ -9,12 +10,18 @@
       name="keywords"
       content="signal processing, music technology, musical timbre"
     />
+    <meta name="author" content="Marcelo Caetano" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
+    <script src="./js/genMenu.js"></script>
+    <script src="./js/genFooter.js"></script>
+
     <link rel="stylesheet" type="text/css" href="./css/mainStyle.css" />
   </head>
+
   <body>
+    <nav id="menu"></nav>
     <div class="content">
       <header>DAFx 2026</header>
       <main>
@@ -31,12 +38,12 @@
               <p class="label">Original Alto</p>
               <audio controls>
                 <source
-                  src="./2025waspaa/wav/sus/ASax-ord-C4-ff.wav"
+                  src="./2026dafx/wav/sus/ASax-ord-C4-ff.wav"
                   type="audio/wav"
                 />
                 <p>
                   Your browser doesn't support HTML5 audio. Here is a
-                  <a href="./2025waspaa/wav/sus/ASax-ord-C4-ff.wav"
+                  <a href="./2026dafx/wav/sus/ASax-ord-C4-ff.wav"
                     >link to the audio</a
                   >
                   instead.
@@ -46,6 +53,13 @@
           </section>
         </article>
       </main>
+      <footer id="footer"></footer>
     </div>
+    <script>
+      genMenu();
+    </script>
+    <script>
+      genFooter();
+    </script>
   </body>
 </html>

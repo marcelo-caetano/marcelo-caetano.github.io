@@ -25,7 +25,8 @@ button {
 
 button:hover {
   /*color: #52aad8;*/
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24),
+  box-shadow:
+    0 20px 20px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -387,9 +388,18 @@ th {
 .label {
   /* flex: 2; */
   /* padding: 1vmin; */
+  margin: 4px 20px;
+  text-align: left;
+  font-size: 4vmin;
+  color: #52aad8;
+}
+
+.figtitle {
+  /* flex: 2; */
+  /* padding: 1vmin; */
   margin: 5px 20px;
   text-align: center;
-  font-size: 2vmin;
+  font-size: 6vmin;
   color: #52aad8;
 }
 
